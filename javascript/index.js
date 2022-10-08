@@ -147,7 +147,7 @@ let user = [
 
 console.log(user[0].name);
 console.log(`${user[0].name} is a friend with ${user[1].name}`);
-console.log(user[1]);
+console.log(user[1].email);
 
 user[2] = {
         name: "Ibrahim",
