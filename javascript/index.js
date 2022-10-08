@@ -50,7 +50,8 @@ var names = ["Bolaji","Hammed","Alabi","Opeyemi","Oke"];
 var nums = names.length
 
 for (let i = 0; i < lens; i++){
-    names[(nums) + i] = surname[i];
+    //names[(nums) + i] = surname[i];
+    names.push(surname[i]);
 }
 
 console.log(names);
