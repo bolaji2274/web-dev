@@ -126,3 +126,37 @@ var lengthOfMyNumber = myNumberLength.length;
 for (let i = 0; i < lengthOfMyNumber; i++){
     console.log(myNumberSort[i]);
 }
+
+let user = [
+    {
+        name: "Bolaji",
+        surname: "Osuntola",
+        age: 20,
+        gender: "Male",
+        email: "hammedbolajihammed@gmail.com"
+    },
+    {
+        name: "Alli",
+        surname: "Zakariyya",
+        age: 20,
+        gender: "Male",
+        email: "zakariyyamuhammadalli@gmail.com"
+    }
+]
+
+
+console.log(user[0].name);
+console.log(`${user[0].name} is a friend with ${user[1].name}`);
+console.log(user[1]);
+
+user[2] = {
+        name: "Ibrahim",
+        surname: "Olasupo",
+        age: 19,
+        gender: "Male",
+        email: "olajideibrahim@gmail.com"
+}
+
+console.log(user[2].surname);
+
+console.log(user[2].email)
