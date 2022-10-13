@@ -196,3 +196,23 @@ else if (temperature > 12 && temperature == 15){
 else {
     console.log("Temperature is cold");
 }
+
+var myName = window.prompt("Enter your name");
+
+var lengthOfName = myName.length
+console.log(lengthOfName);
+
+var list = myName.split(' ')
+
+console.log(list.length)
+
+console.log(`My name is ${myName}`);
+
+var myNumber = window.prompt("Enter your number seperated with comma");
+var myNumberLength = myNumber.split(',');
+var myNumberSort = myNumberLength.sort()
+var lengthOfMyNumber = myNumberLength.length;
+
+for (let i = 0; i < lengthOfMyNumber; i++){
+    console.log(myNumberSort[i]);
+}
