@@ -240,3 +240,19 @@ var lengthOfMyNumber = myNumberLength.length;
 for (let i = 0; i < lengthOfMyNumber; i++){
     console.log(myNumberSort[i]);
 }
+
+
+let UserReady = confirm("Are you Ready ?");
+
+if (UserReady) {
+    alert("User is Ready");
+}
+
+let unitPrices = 10;
+
+let prices = prompt("How many did you want to order ?", 0);
+
+if (prices > 0) {
+    let total = unitPrices * prices;
+    console.log(total);
+}
