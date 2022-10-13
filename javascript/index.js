@@ -202,6 +202,30 @@ var myName = window.prompt("Enter your name");
 var lengthOfName = myName.length
 console.log(lengthOfName);
 
+
+
+/* User interaction */
+
+alert("Hello, world");
+window.alert("New Hello, World"); //Display only first parameter
+
+let myConfirmation = window.confirm("Are you sure you want to enter this site ?");
+
+console.log(myConfirmation);
+
+let remove = confirm("Remove all data ");
+
+let message = remove ? "Deleting all data" : "Canceled";
+
+console.log(message);
+
+let myName = window.prompt("What is your name ?", "Bolaji");
+myName = myName ? myName : "Anonymous";
+let age = prompt("Hello " + myName + " How old are you");
+
+alert(`Mr ${myName} is ${age} years old`);
+
+
 var list = myName.split(' ')
 
 console.log(list.length)
