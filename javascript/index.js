@@ -184,3 +184,15 @@ switch (grade){
     default:
         console.log(grade,"is not a letter grade");
 }
+
+// //&& and || or
+var temperature = 11;
+if (temperature > 30){
+    console.log("It's HOT outside");
+}
+else if (temperature > 12 && temperature == 15){
+    console.log("Temperature is in normal condition");
+}
+else {
+    console.log("Temperature is cold");
+}
