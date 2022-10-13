@@ -256,3 +256,17 @@ if (prices > 0) {
     let total = unitPrices * prices;
     console.log(total);
 }
+
+let userAge = 23;
+let isFemale = false;
+let points = 703;
+let cartValue = 209;
+let shippingCost = 9.99;
+
+if (userAge > 21) {
+    if (cartValue >= 300 || points >= 500) {
+        shippingCost = 0;
+    }
+}
+
+console.log(shippingCost);
