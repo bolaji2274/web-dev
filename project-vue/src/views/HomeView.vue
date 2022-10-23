@@ -20,7 +20,7 @@ export default {
     <Product  proImage="images/web 3.PNG" proTitle="How VOC Affects Your <br>IndoornAir quality" proDesc="Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and workspaces." />
     <HowTo />
     <Blog />
-    <Footers />
+    <Footers name='company' help='get help' shop='online shop' follow='follow us'/>
   </main>
 </template>
 
