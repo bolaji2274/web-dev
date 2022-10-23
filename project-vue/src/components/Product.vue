@@ -14,6 +14,7 @@
                 <img :src="proImage" alt="pro List 2 image">
                 <h1 v-html="proTitle"></h1>
                 <p v-html="proDesc"></p>
+                <a href="#" class="btn2">Read Article</a>
             </div>
             <!-- <div class="pro-list2">
                 <img src="images/web 3.PNG">
