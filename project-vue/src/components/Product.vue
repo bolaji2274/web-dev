@@ -45,14 +45,9 @@
 <script>
 export default {
     props: {
-        proList2: {
-                proImage: {
-                    type: String,
-                    default: 'images/web 3.PNG'
-                },
-                proTitle: String,
-                proDesc: String
-            }
+        proImage: String,
+        proTitle: String,
+        proDesc: String
     },
     data() {
         return {
