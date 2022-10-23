@@ -16,9 +16,9 @@
 
 <script>
 export default {
+    props: ['titles'],
     data() {
         return {
-            props: ['titles'],
             url:'#',
             heros: [
                 { title: 'Time to get Your House Clean and in Order', desc: 'To have good air quality is not as moving away from the city to a quiet suburb or rural environment.'}
