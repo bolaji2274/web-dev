@@ -11,9 +11,9 @@
             </div>
 
             <div class="pro-list2">
-                <img :src="image" alt="pro List 2 image">
-                <h1 v-html="title"></h1>
-                <p v-html="desc"></p>
+                <img :src="proImage" alt="pro List 2 image">
+                <h1 v-html="proTitle"></h1>
+                <p v-html="proDesc"></p>
             </div>
             <!-- <div class="pro-list2">
                 <img src="images/web 3.PNG">
@@ -46,12 +46,12 @@
 export default {
     props: {
         proList2: {
-                image: {
+                proImage: {
                     type: String,
                     default: 'images/web 3.PNG'
                 },
-                title: String,
-                desc: String
+                proTitle: String,
+                proDesc: String
             }
     },
     data() {
