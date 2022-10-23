@@ -5,7 +5,7 @@
   <facility/>
   <testimony/>
   <cta/>
-  <FOOTER/>
+  <Footers/>
   </main>
 </template>
 
@@ -16,7 +16,7 @@ import campus from '@/components/Campus.vue'
 import facility from '@/components/Facility.vue'
 import testimony from '@/components/Testimony.vue'
 import cta from '@/components/Cta.vue'
-import FOOTER from '@/components/Footer.vue'
+import Footers from '@/components/Footer.vue'
 
 
 export default {
