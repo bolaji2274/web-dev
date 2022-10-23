@@ -47,7 +47,6 @@ export default {
             proList: false,
             items: [
                 { image: 'images/bottle.jpeg', title: 'Time to Get Your House ', desc: ' ng elit. Enim dolores tempora quo.' },
-                // { image: 'images/web 3.PNG', title: 'How VOC Affects Your<br> IndoornAir quality', desc: 'Using UV Light for disinfection is becoming an <br>essential hygiene practice for both home and work spaces.' }
             ],
             benefit: {
                 head1: 'The Benefit of Using UV-C Light in the Hospitality Industry',
