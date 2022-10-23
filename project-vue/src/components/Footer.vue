@@ -34,6 +34,12 @@
 </template>
 <script>
 export default {
+    props: {
+        name: String,
+        help: String,
+        shop: String,
+        follow: String
+    },
     data() {
         return {
             companys: [
