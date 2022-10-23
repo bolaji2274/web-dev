@@ -16,14 +16,6 @@
                 <p v-html="proDesc"></p>
                 <a href="#" class="btn2">Read Article</a>
             </div>
-            <!-- <div class="pro-list2">
-                <img src="images/web 3.PNG">
-                <h1>How VOC Affects Your <br>IndoornAir quality</h1>
-                <p>Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and work
-                    spaces.</p>
-
-                <a href="#" class="btn2">Read Article</a>
-            </div> -->
 
             <div class="pro-list3">
                
