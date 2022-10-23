@@ -16,7 +16,7 @@ export default {
 
 <template>
   <main>
-    <HeroPage />
+    <HeroPage titles="Time to get Your House Clean and in Order" />
     <Product />
     <HowTo />
     <Blog />

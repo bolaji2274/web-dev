@@ -4,7 +4,7 @@
         <section class="hero-btn">
 
             <div class="hero-page" v-for="hero in heros" :key="hero">
-                <h1>{{hero.title}}</h1>
+                <h1>{{titles}}</h1>
                 <p>{{hero.desc}}</p>
 
 
