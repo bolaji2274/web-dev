@@ -23,7 +23,7 @@ export default {
             desc:'Lorem ipsum dolor sit amet, consectetur adispisciing elit.',
             items: [
                 {image:'london.png',location:'Erin Osun'},
-                {image:'newyork.png',location:'Erin Osun @ Hub'},
+                {image:'newyork.png',location:'Erin Osun @ Resources Hub'},
                 {image:'washington.png',location:'Erin Osun @ Oke Awesin'}
 
             ]
