@@ -79,6 +79,7 @@ export default {
     margin-left: 30px;
     width: 100%;
     margin-top: 40px;
+    position: relative;
 }
 
 .row {
