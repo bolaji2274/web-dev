@@ -19,9 +19,9 @@
          </nav>
     
 <div class="text-box">
-    <h1>{{headMessage}}</h1>
-    <P></P>
-    <a href="" class="hero-btn">Visit Us To Know More About Our Services</a>
+         <h1>{{headMessage}}</h1>
+          <P v-html="desc"></P>
+          <a href="" class="hero-btn">{{visit}}</a>
 </div>
     </section>
     <RouterView /> 
@@ -34,6 +34,7 @@ export default {
     data(){
         return{
             desc:'This is a website for ELERINMOSA UNIVERSITY OF TECHNOLOGY located in Erin Osun. The founder was Coxxxx and led by Cohortxxxx learning <br>all different kind of course in all aspect of study',
+            visit: 'Visit Us To Know More About Our Services',
             links: [
                 {name: 'HOME'},
                 {name: 'ABOUT'},
