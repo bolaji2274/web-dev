@@ -21,7 +21,7 @@
          </nav>
     
 <div class="text-box">
-    <h1>ELERINMOSA UNIVERSITY OF TECHNOLOGY </h1>
+    <h1>{{headMessage}}</h1>
     <P>This is a website for ELERINMOSA UNIVERSITY OF TECHNOLOGY 
         located in Erin Osun. The founder was Coxxxx 
         and led by Cohortxxxx learning <br> 
@@ -36,6 +36,7 @@
 
 <script>
 export default {
+    props: ['headMessage'],
     data(){
         return{
             

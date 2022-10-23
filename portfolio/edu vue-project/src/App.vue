@@ -13,7 +13,7 @@ export default {
 
 <template>
 	<div>
-	<navbar/>
+	<navbar headMessage="ELERINMOSA UNIVERSITY OF TECHNOLOGY"/>
 	</div>
   <RouterView /> 
 
