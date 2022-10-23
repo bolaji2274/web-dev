@@ -2,10 +2,8 @@
     <div>
                     <!-- campus -->
     <section class="campus">
-        <h1>Our Global Campus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur
-            adispisciing elit.
-        </p>
+        <h1>{{heading}}</h1>
+        <p>{{desc}}</p>
         <div class="row">
             <div class="campus-col" v-for="item in items" :key="item">
                 <img :src="item.image" alt="images">
@@ -13,18 +11,6 @@
                     <h3>{{item.location}}</h3>
                 </div>
             </div>
-            <!-- <div class="campus-col">
-                <img src="newyork.png" alt="images">
-                <div class="layer">
-                    <h3>Erin Osun @ Hub</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="washington.png" alt="images">
-                <div class="layer">
-                    <h3>Erin Osun @OKe Awesin</h3>
-                </div>
-            </div> -->
         </div>
     </section>
     </div>
@@ -33,6 +19,8 @@
 export default {
     data () {
         return {
+            heading: 'Our Global Campus',
+            desc:'Lorem ipsum dolor sit amet, consectetur adispisciing elit.',
             items: [
                 {image:'london.png',location:'Erin Osun'},
                 {image:'newyork.png',location:'Erin Osun @ Hub'},
