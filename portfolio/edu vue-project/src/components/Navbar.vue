@@ -12,8 +12,6 @@
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">COURSE</a></li>
                     <li><a href="">BLOG</a></li>
-                    <li><RouterLink to="/course">Course</RouterLink></li>
-                    <li><router-link to="/contact">Contact us</router-link></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
@@ -39,7 +37,13 @@ export default {
     props: ['headMessage'],
     data(){
         return{
-            
+            links: [
+                {name: 'HOME'},
+                {name: 'ABOUT'},
+                {name: 'COURSE'},
+                {name: 'CONTACT'},
+                {name: 'BLOG'}
+            ]
         }
     }
 }
