@@ -4,7 +4,7 @@
   <campus/>
   <facility/>
   <testimony/>
-  <cta head="Enroll For Our Various Online Course <br>Anywhere From The World" />
+  <cta head="Enroll For Our Various Online Course <br>Anywhere From The World" contact="CONTACT US"/>
   <Footers/>
   </main>
 </template>

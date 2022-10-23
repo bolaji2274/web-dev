@@ -4,13 +4,16 @@
 
 <section class="cta">s
     <h1 v-html="head"></h1>
-    <a href="" class="hero-btn">CONTACT US</a>
+    <a href="" class="hero-btn">{{contact}}</a>
 </section>
     </div>
 </template>
 <script>
 export default {
-    props: ['head'],
+    props: {
+        head: String,
+        contact: String
+    },
 }
 </script>
 
