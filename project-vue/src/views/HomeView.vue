@@ -17,7 +17,7 @@ export default {
 <template>
   <main>
     <HeroPage titles="Time to get Your House Clean and in Order" />
-    <Product  image="images/web 3.PNG" title="How VOC Affects Your <br>IndoornAir quality" desc="Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and workspaces." />
+    <Product  proImage="images/web 3.PNG" proTitle="How VOC Affects Your <br>IndoornAir quality" proDesc="Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and workspaces." />
     <HowTo />
     <Blog />
     <Footers />
