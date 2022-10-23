@@ -10,6 +10,11 @@
                 <a class="btn2" href="#">Read Article</a>
             </div>
 
+            <div class="pro-list2" v-for="list in proList2" :key="list">
+                <img :src="list.image" alt="pro List 2 image">
+                <h1 v-html="list.title"></h1>
+                <p v-html="list.desc"></p>
+            </div>
             <!-- <div class="pro-list2">
                 <img src="images/web 3.PNG">
                 <h1>How VOC Affects Your <br>IndoornAir quality</h1>
