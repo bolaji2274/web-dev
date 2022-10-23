@@ -10,10 +10,10 @@
                 <a class="btn2" href="#">Read Article</a>
             </div>
 
-            <div class="pro-list2" v-for="list in proList2" :key="list">
-                <img :src="list.image" alt="pro List 2 image">
-                <h1 v-html="list.title"></h1>
-                <p v-html="list.desc"></p>
+            <div class="pro-list2">
+                <img :src="image" alt="pro List 2 image">
+                <h1 v-html="title"></h1>
+                <p v-html="desc"></p>
             </div>
             <!-- <div class="pro-list2">
                 <img src="images/web 3.PNG">
@@ -45,13 +45,14 @@
 <script>
 export default {
     props: {
-        proList2: [
-            {
-                image: String,
+        proList2: {
+                image: {
+                    type: String,
+                    default: 'images/web 3.PNG'
+                },
                 title: String,
                 desc: String
             }
-        ]
     },
     data() {
         return {
