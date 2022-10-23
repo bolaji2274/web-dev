@@ -21,7 +21,7 @@ import Footers from '@/components/Footer.vue'
 
 export default {
   components: {
-    course,campus,facility,testimony,cta,FOOTER
+    course,campus,facility,testimony,cta,Footers
   }
 }
 
