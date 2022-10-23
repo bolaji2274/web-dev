@@ -5,7 +5,7 @@
         <div class="row">
             <div class="pro-list" v-for="item in items" :key="item">
                 <img :src="item.image">
-                <h1 v-html="titles"></h1>
+                <h1 v-html="item.title"></h1>
                 <p v-html="item.desc"></p>
                 <a class="btn2" href="#">Read Article</a>
             </div>
