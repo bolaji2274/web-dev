@@ -43,6 +43,10 @@ export default {
                 {name: 'COURSE'},
                 {name: 'CONTACT'},
                 {name: 'BLOG'}
+            ],
+            icons: [
+                {icon: 'fa fa-times'},
+                {icon: 'fa fa-bars'}
             ]
         }
     }
