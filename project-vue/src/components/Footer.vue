@@ -4,25 +4,25 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>{{heading.name}}</h4>
+                        <h4>{{name}}</h4>
                         <ul>
                             <li><a href="#" v-for="item in companys" :key="item">{{item.about}}</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>{{heading.help}}</h4>
+                        <h4>{{help}}</h4>
                         <ul>
                             <li><a href="#" v-for="get in helps" :key="get">{{get.name}}</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>{{heading.shop}}</h4>
+                        <h4>{{shop}}</h4>
                         <ul>
                             <li><a href="#" v-for="items in online" :key="items">{{items.shop}}</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>{{heading.follow}}</h4>
+                        <h4>{{follow}}</h4>
                         <div class="social-links">
                             <a href="#" v-for="link in icons" :key="link"><i :class="link.social"></i></a>
                         </div>
@@ -53,13 +53,7 @@ export default {
             ],
             icons: [
                 { social: 'fab fa-facebook-f' }, { social: 'fab fa-twitter' }, { social: 'fab fa-instagram' }, { social: 'fab fa-linkedin-in' }
-            ],
-            heading: {
-                name: 'company',
-                help: 'get help',
-                shop: 'online shop',
-                follow: 'follow us'
-            }
+            ]
         }
     }
 }
