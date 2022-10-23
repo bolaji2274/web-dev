@@ -4,7 +4,7 @@
 
  <section class="header">
          <nav>
-            <a href="index.html"><img src="logo.png" alt=""></a>
+            <a href=""><img src="logo.png" alt=""></a>
             <div class="nav-links">
                 <i class="fa fa-times"></i>
                 <ul>
