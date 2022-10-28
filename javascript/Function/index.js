@@ -18,8 +18,7 @@ document.getElementById('demo').innerHTML = num2;
 
 let num3 = num.reduce(sumOf);
 
-function sumOf(value){
-    let sum;
+function sumOf(value, sum){
     return sum + value;
 }
 
