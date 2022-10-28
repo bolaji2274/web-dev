@@ -99,10 +99,14 @@ body {
     transform: translate(-50%, -50%);
     width: 400px;
 } */
-
+header .sign-up form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sign-up h1 {
     font-size: 25px;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     margin: 17px 0;
 }
@@ -126,7 +130,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     padding: 15px 10px;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 10px;
     width: 100px;
     border: 0;
@@ -164,8 +168,5 @@ button:hover {
     /* box-shadow: 0 0 0 1px black; */
     margin-bottom: 10px;
 }
-header {
-    align-items: center;
-    justify-content: center;
-}
+
 </style>
