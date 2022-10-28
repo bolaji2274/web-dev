@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation</title>
     <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         .container{
             display: flex;
             align-items: center;
             justify-content: center;
         }
+        .container h1{
+            font-size: 30px;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="min-heading">favourite Movie Franchise</h1>
+        <h1 id="min-heading">Favourite Movie Franchise</h1>
         <ul>
             <li class="list-items">The Matrix</li>
             <li class="list-items">Stars Wars</li>
