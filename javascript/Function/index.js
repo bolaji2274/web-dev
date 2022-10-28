@@ -5,3 +5,5 @@ let num1 = num.map(mutiply);
 function mutiply(value){
     value * 2;
 }
+
+console.log(num1);
