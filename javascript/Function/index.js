@@ -14,3 +14,4 @@ let num2 = num.filter(check);
 function check(value){
     return value > 4;
 }
+document.getElementById('demo').innerHTML = num2;
