@@ -84,7 +84,7 @@ body {
     background: url('./fourth.jpeg') no-repeat;
     background-size: auto;
     background-attachment: fixed;
-    background-position: right;
+    background-position: center;
     /* justify-content: center; */
     color: rgb(94, 28, 28);
     font-weight: bolder;
