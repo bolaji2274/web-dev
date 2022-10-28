@@ -1,9 +1,9 @@
 <template>
 
-    <div>
+    <div class="wrapper">
         <header class="sign-up">
             <h1>SIGN UP HERE :</h1>
-        </header>
+        
             <form action="" @submit.prevent="validate" method="post">
                 <div class="container">
                     <div class="item">
@@ -34,6 +34,7 @@
         <div class="text" style="text-align:center; color:greenyellow; font-size: 20px;">
 
         </div>
+    </header>
     </div>
 </template>
 
@@ -82,7 +83,7 @@ export default {
 
 body {
     background: url('./fourth.jpeg') no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     /* justify-content: center; */
@@ -148,12 +149,11 @@ button:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: 10px;
+    /* justify-content: center; */
+    /* margin-left: 50%; */
     width: 400px;
-    top: 50%;
-    left: 50%;
+    /* top: 50%;
+    left: 50%; */
 }
 
 .container>div {
@@ -162,5 +162,8 @@ button:hover {
     /*demo*/
     /* box-shadow: 0 0 0 1px black; */
     margin-bottom: 10px;
+}
+header {
+    align-items: center;
 }
 </style>
