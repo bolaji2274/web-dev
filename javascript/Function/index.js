@@ -31,9 +31,12 @@ student.age = 20;
 student.id = 28911
 console.log(student);
 
-let obj = function(objects){
+function obj(objects){
     for (let i = 0; i < objects.length; i++){
-        objects[i] = prompt(`Enter the value for {objects[i]}`);
+        this.objects[i] = prompt(`Enter the value for {objects[i]}`);
     }
 }
-console.log(obj);
+myObj = obj([firstName,lastName,age,school,Status]);
+
+console.log(myObj);
+
