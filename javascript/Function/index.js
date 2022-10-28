@@ -31,12 +31,21 @@ student.age = 20;
 student.id = 28911
 console.log(student);
 
-function obj(objects){
-    for (let i = 0; i < objects.length; i++){
-        this.objects[i] = prompt(`Enter the value for {objects[i]}`);
-    }
-}
-myObj = obj([firstName,lastName,age,school,Status]);
+// function obj(objects){
+//     for (let i = 0; i < objects.length; i++){
+//         objects[i] = prompt(`Enter the value for {objects[i]}`);
+//     }
+// }
+// let arrays = [firstName, lastName, age, school, Status];
+// let myObj = obj(arrays);
 
-console.log(myObj);
+// console.log(myObj);
+// function stud(name, age, studies) {
+//     this.name = name;
+//     this.age = age;
+//     this.studies = studies;
+// }
+
+// let objs = stud('Bolaji Hammed', 22, 'EIT');
+// console.log(objs.name);
 
