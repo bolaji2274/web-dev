@@ -21,5 +21,12 @@ let num3 = num.reduce(sumOf);
 function sumOf(value, sum){
     return sum + value;
 }
-
 document.getElementById('demo').innerHTML = num3;
+
+        //  Object manipulation
+let student = new Object();
+
+student.name = 'Bolaji';
+student.age = 20;
+student.id = 28911
+console.log(student);
