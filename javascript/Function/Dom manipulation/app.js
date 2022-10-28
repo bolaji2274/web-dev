@@ -9,3 +9,6 @@ console.log(listItem);
 
 const container = document.querySelector('div');
 console.log(container);
+
+const container1 = document.querySelectorAll('div');
+console.log(container1);
