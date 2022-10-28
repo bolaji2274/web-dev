@@ -7,3 +7,4 @@ function mutiply(value){
 }
 
 console.log(num1);
+document.getElementById('demo').innerHTML = num1;
