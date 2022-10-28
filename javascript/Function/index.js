@@ -15,3 +15,12 @@ function check(value){
     return value > 4;
 }
 document.getElementById('demo').innerHTML = num2;
+
+let num3 = num.reduce(sumOf);
+
+function sumOf(value){
+    let sum;
+    return sum + value;
+}
+
+document.getElementById('demo').innerHTML = num3;
