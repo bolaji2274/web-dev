@@ -30,3 +30,10 @@ student.name = 'Bolaji';
 student.age = 20;
 student.id = 28911
 console.log(student);
+
+let obj = function(objects){
+    for (let i = 0; i < objects.length; i++){
+        objects[i] = prompt(`Enter the value for {objects[i]}`);
+    }
+}
+console.log(obj);
