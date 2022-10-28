@@ -82,12 +82,13 @@ export default {
 }
 
 body {
-    background: url('./fourth.jpeg') no-repeat;
+    /* background: url('./fourth.jpeg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
     /* justify-content: center; */
-    color: rgb(94, 28, 28);
+    background-color: black;
+    color: #fff;
     font-weight: bolder;
 }
 
@@ -165,5 +166,6 @@ button:hover {
 }
 header {
     align-items: center;
+    justify-content: center;
 }
 </style>
