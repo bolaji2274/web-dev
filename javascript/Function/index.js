@@ -1,4 +1,4 @@
-let num = [2,3,5,7,8];
+let num = [2,3,5,7,8,4];
 
 let num1 = num.map(mutiply);
 
@@ -8,3 +8,9 @@ function mutiply(value){
 
 console.log(num1);
 document.getElementById('demo').innerHTML = num1;
+
+let num2 = num.filter(check);
+
+function check(value){
+    return value > 4;
+}
