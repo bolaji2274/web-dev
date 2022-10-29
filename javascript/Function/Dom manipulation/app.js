@@ -50,3 +50,5 @@ li.setAttribute('id', 'main-heading');
 li.removeAttribute('id');
 
 console.log(title.getAttribute('id'));
+
+li.classList.add('list-items');
