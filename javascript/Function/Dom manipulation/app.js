@@ -14,6 +14,9 @@
 // console.log(container1);
 
 const listItem = document.querySelectorAll('.list-items');
-listItem.style.fontSize = '4rem';
+
+for (i = 0; i < listItem.length; i++){
+    listItem[i].style.color = 'red';
+}
 
 console.log(listItem);
