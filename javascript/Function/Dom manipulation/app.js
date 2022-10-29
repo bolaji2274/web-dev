@@ -13,10 +13,28 @@
 // const container1 = document.querySelectorAll('div');
 // console.log(container1);
 
+//      styling element
+
 const listItem = document.querySelectorAll('.list-items');
 
 for (i = 0; i < listItem.length; i++){
-    listItem[i].style.color = 'red';
+    listItem[i].style.fontSize = '2rem';
 }
 
-console.log(listItem);
+const title = document.querySelector('#min-heading');
+title.style.color = 'green';
+
+// creating element
+
+const ul = document.querySelector('ul');
+
+const li = document.createElement('li');
+
+ul.append(li);
+
+// const firstLetter = document.querySelector('.list-items');
+
+// console.log(firstLetter.innerText); 
+// console.log(firstLetter.innerHTML);
+// console.log(firstLetter.textContent);
+li.innerText = 'DHRUVA';
