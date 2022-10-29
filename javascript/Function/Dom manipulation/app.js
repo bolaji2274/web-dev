@@ -30,6 +30,8 @@ const ul = document.querySelector('ul');
 
 const li = document.createElement('li');
 
+//      adding element
+
 ul.append(li);
 
 // const firstLetter = document.querySelector('.list-items');
@@ -37,4 +39,14 @@ ul.append(li);
 // console.log(firstLetter.innerText); 
 // console.log(firstLetter.innerHTML);
 // console.log(firstLetter.textContent);
+
+// modify the innerText
+
 li.innerText = 'DHRUVA';
+
+// modify the Attributes && Classess
+
+li.setAttribute('id', 'main-heading');
+li.removeAttribute('id');
+
+console.log(title.getAttribute('id'));
