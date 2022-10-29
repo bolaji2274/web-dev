@@ -12,3 +12,8 @@
 
 // const container1 = document.querySelectorAll('div');
 // console.log(container1);
+
+const listItem = document.querySelectorAll('.list-items');
+listItem.style.fontSize = '4rem';
+
+console.log(listItem);
