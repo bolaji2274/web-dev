@@ -52,3 +52,11 @@ li.removeAttribute('id');
 console.log(title.getAttribute('id'));
 
 li.classList.add('list-items');
+li.classList.remove('list-items');
+
+console.log(li.classList.contains('list-items'));
+
+
+// Remove Elements
+
+li.remove();
