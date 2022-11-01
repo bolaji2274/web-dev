@@ -25,9 +25,9 @@
                     <div class="item">
                         <p>Address:</p>
                         <input type="text" v-model="user.address">
-                    </div>
+                    </div> 
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" id="btn" class="container">Submit</button> 
             </form>
             
        
@@ -42,55 +42,52 @@
 export default {
     data() {
         return {
-            // firstName: 'Bolaji',
-            // lastName: 'Adekunle',
-            // email: 'hammedbol',
-            // password: '',
-            // address: '',
-            // valid: '',
-            user: {}
+            user: {
+            firstName: 'Bolaji',
+            lastName: 'Adekunle',
+            email: 'hammedbolaji@gmail.com',
+            password: '',
+            address: ''
         }
+    }
     },
     methods: {
         validate: function(){
-            // if ((this.firstName === '') || (this.lastName === '') || (this.email === '') || (this.password === '') || (this.address === '')) {
-            //     return this.valid = 'Failed';
-            // } else{
-            //     return this.valid = 'Passed';
-            // }
-            console.log(this.user)
-            // if (!this.lastName || !this.firstName || !this.email || !this.password || !this.address) {
+            if (!this.user.lastName || !this.user.firstName || !this.user.email || !this.user.password || !this.user.address) {
+                return alert('Enter all required input');
+            } else{
+                let myObj = JSON.stringify(this.user);
+                localStorage.setItem('user', myObj);
+                console.log(localStorage)
+                // console.log(localStorage.getItem('password'));
+                
+                return alert('Registration successfully');
+            }
+
+
+
+            // if (!this.user) {
             //     return alert('Enter all required input');
             // }
-            if (!this.user) {
-                return alert('Enter all required input');
-            }
-            else   {
-                return alert('Registration successfull');
-            }
+            // else {
+            //     console.log(!this.user)
+            //     return alert('Registration successfull');
+            // }
         },
+        
         
     }
 }
 </script>
 
 <style>
+
 * {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
 
-body {
-    /* background: url('./fourth.jpeg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; */
-    /* justify-content: center; */
-    background-color: black;
-    color: #fff;
-    font-weight: bolder;
-}
 
 /* .sign-up {
     position: absolute;
@@ -99,6 +96,13 @@ body {
     transform: translate(-50%, -50%);
     width: 400px;
 } */
+.sign-up{
+    width: 420px;
+    height: 600px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
 header .sign-up form{
     display: flex;
     align-items: center;
@@ -106,9 +110,19 @@ header .sign-up form{
 }
 .sign-up h1 {
     font-size: 25px;
-    /* text-align: center; */
+    text-align: center;
     text-transform: uppercase;
     margin: 17px 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-left: 50%; */
+    margin: 0 auto;
+    width: 400px;
+    /* top: 50%;
+    left: 50%; */
 }
 
 .container p {
@@ -126,19 +140,16 @@ header .sign-up form{
     outline: none;
 }
 
- .btn {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 10px;
-    /* margin-left: 25%; */
-    margin-top: 10px;
+#btn{
     width: 100px;
-    border: 0;
-    color: rgb(94, 28, 28);
-    border-radius: 5px;
-    background-color: #fff;
+    height: 40px;
+    text-align: center;
+    padding: auto;
+    font-size: 25px;
+    color: red;
+    margin-left: 34%;
+    margin: 10px auto;
 }
-
 button:hover {
     color: red;
     background-color: aqua;
@@ -151,22 +162,12 @@ button:hover {
     width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* margin-left: 50%; */
-    width: 400px;
-    /* top: 50%;
-    left: 50%; */
-}
 
 .container>div {
     flex: 50%;
-    /* or - flex: 0 50% - or - flex-basis: 50% - */
-    /*demo*/
-    /* box-shadow: 0 0 0 1px black; */
     margin-bottom: 10px;
 }
-
+input:hover{
+    background-color: aquamarine;
+}
 </style>
