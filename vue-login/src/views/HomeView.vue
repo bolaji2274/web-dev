@@ -1,5 +1,6 @@
 <script>
 import InputLoginVue from '../components/InputLogin.vue';
+
 export default {
   components: {
     InputLoginVue
