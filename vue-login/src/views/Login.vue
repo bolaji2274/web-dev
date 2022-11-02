@@ -13,7 +13,7 @@
 </body>
 </template>
 
-<style scoped>
+<style>
  body{
     background-color: #344a72;
     font-family: 'Roboto', sans-serif;

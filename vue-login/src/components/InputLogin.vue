@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 * {
     padding: 0;
@@ -97,7 +97,7 @@ export default {
     width: 400px;
 } */
 .sign-up{
-    width: 420px;
+    width: 4500px;
     height: 600px;
     margin: auto;
     background-color: aliceblue;
