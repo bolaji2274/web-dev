@@ -5,7 +5,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <header>
-    <img
+    <!-- <img
       alt="Vue logo"
       class="logo"
       src="@/assets/logo.svg"
@@ -20,7 +20,8 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
+    </div> -->
+    
   </header>
 
   <RouterView />
