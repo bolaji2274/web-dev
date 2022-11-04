@@ -1,11 +1,12 @@
 <template>
-    <div>
-        <p>Todos Item</p>
+    <div class="todo-item" :class="{'is-complete':todo.completed}">
+        <p>{{todo.title}}</p>
     </div>
 </template>
 <script>
 export default {
-    name: "TodosItem"
+    name: "TodosItem",
+    props: ["todo"]
 }
 </script>
 <style scoped>
@@ -16,7 +17,7 @@ export default {
 }
 .is-complete{
     text-decoration: line-through;
-}
+ }
 .del{
     background: #ff0000;
     color: #fff;
