@@ -3,31 +3,5 @@
 </template>
 
 <script>
-export default {
-  name: 'app',
-  components: {
-    
-  },
-  data() {
-    return {
-      todos: [
-        {
-          id: 1,
-          title: 'Todo One',
-          completed: false
-        },
-        {
-          id: 2,
-          title: 'Todo two',
-          completed: true
-        },
-        {
-          id: 3,
-          title: 'Todo three',
-          completed: false
-        }
-      ]
-    }
-  },
-}
+
 </script>  
