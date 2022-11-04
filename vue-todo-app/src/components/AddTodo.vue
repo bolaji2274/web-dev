@@ -1,14 +1,26 @@
 <template>
     <div>
-        <form>
-            <input type="text" name="title" placeholder="AddTodo...">
+        <form @submit="addTodo">
+            <input type="text" v-model="title" name="title" placeholder="AddTodo...">
             <input type="submit" value="Submit" class="btn">
         </form>
     </div>
 </template>
 <script>
 export default {
-    name: "AddTodo"
+    name: "AddTodo",
+    data() {
+        return {
+            title: ''
+        }
+    },
+    methods: {
+        addTodo: function(){
+            const newTodo = {
+                id: ''
+            }
+        }
+    },
 }
 </script>
 
@@ -19,6 +31,7 @@ form {
 input[type="text"]{
     flex: 10;
     padding: 5px;
+    height: 50px;
 }
 input[type="submit"]{
     flex: 2;
