@@ -15,6 +15,11 @@
 
 //      styling element
 
+const titles = document.querySelector('li');
+console.log(titles);
+titles.style.color = 'red';
+
+
 const listItem = document.querySelectorAll('.list-items');
 
 for (i = 0; i < listItem.length; i++){
@@ -37,8 +42,8 @@ ul.append(li);
 // const firstLetter = document.querySelector('.list-items');
 
 // console.log(firstLetter.innerText); 
-// console.log(firstLetter.innerHTML);
 // console.log(firstLetter.textContent);
+// console.log(firstLetter.innerHTML);
 
 // modify the innerText
 
@@ -46,17 +51,17 @@ li.innerText = 'DHRUVA';
 
 // modify the Attributes && Classess
 
-li.setAttribute('id', 'main-heading');
-li.removeAttribute('id');
+// li.setAttribute('id', 'main-heading');
+// li.removeAttribute('id');
 
-console.log(title.getAttribute('id'));
+// console.log(title.getAttribute('id'));
 
 li.classList.add('list-items');
-li.classList.remove('list-items');
+// li.classList.remove('list-items');
 
 console.log(li.classList.contains('list-items'));
 
 
 // Remove Elements
 
-li.remove();
+// li.remove();
