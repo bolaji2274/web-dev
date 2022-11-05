@@ -12,3 +12,8 @@ function alertBtn(){
 }
 btnTwo.addEventListener("click", alertBtn);
 
+const newBack = document.querySelector('.box-3');
+changeBtn = () => {
+    newBack.style.backgroundColor = 'blue';
+}
+newBack.addEventListener("mouseover", changeBtn);
