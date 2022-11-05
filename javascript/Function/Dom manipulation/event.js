@@ -11,7 +11,7 @@ function alertBtn(){
     alert("I also love javascript Bro");
 }
 btnTwo.addEventListener("click", alertBtn);
-
+let bg = false;
 const newBack = document.querySelector('.box-3');
 changeBtn = () => {
     newBack.style.backgroundColor = 'blue';
