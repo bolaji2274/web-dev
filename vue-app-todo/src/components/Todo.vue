@@ -1,10 +1,16 @@
 <template>
     <div>
+        <header>
         <h1>Todo-List App</h1>
-        <form action="" id="new-task">
-            <input type="text" id="new-input"> 
+        <form action="" id="new-task-form">
+            <input type="text" id="new-task-input"> 
+            <input type="sudmit" id="new-task-submit" value="Add-task">
         </form>
-        <input type="sudmit" value="Add-task">
+    </header>
+
+    <main>
+        
+    </main>
     </div>
 </template>
 <script>
