@@ -31,5 +31,8 @@ export default {
 </script>
 
 <style scoped>
-
+ :root{
+    --dark: #374151;
+    --darker: #1
+ }
 </style>
