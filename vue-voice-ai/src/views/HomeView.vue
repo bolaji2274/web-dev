@@ -1,9 +1,19 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <main>
-    <TheWelcome />
+
+
   </main>
 </template>
+
+<script>
+import VoiceVue from '../components/Voice.vue';
+
+export default{
+  components:{
+    VoiceVue
+  }
+}
+
+</script>
+
+
