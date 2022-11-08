@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
             <h1 style="text-align: center;">Hi welcome voice ai</h1>
                 <div class="heart"></div>
             <div class="btn">
@@ -16,6 +16,9 @@ export default {
 }
 </script>
 <style scoped>
+div.container{
+  background: aqua;
+}
 .heart{
     position: relative;
     height: 160px;
