@@ -3,9 +3,9 @@
             <h1 style="text-align: center;">Hi welcome voice ai</h1>
                 <div class="heart"></div>
             <div class="btn">
-                <button id="start">Voice Start</button>
-                <button id="stop">Voice Stop</button>
-                <button id="speak">Speak out</button>
+                <button id="start" @click="onStart">Voice Start</button>
+                <button id="stop" @click="onStop">Voice Stop</button>
+                <button id="speak" @click="onSpeak">Speak out</button>
             </div>
     </div>
 </template>
@@ -19,7 +19,9 @@ export default {
         }
     },
     methods: {
-        
+        onStart() {
+            recogniton.start();
+        }
     },
     created() {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
