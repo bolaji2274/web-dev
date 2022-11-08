@@ -63,7 +63,7 @@ export default {
             }
             if (transcript.includes("open github") ||
                 transcript.includes('git')){
-                rthis.eadOut("okay sir.i am opening github for you sir");
+                this.readOut("okay sir.i am opening github for you sir");
                 open("https://www.github.com/");
             }
             // how to treat two sylablle
