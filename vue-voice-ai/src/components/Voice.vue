@@ -21,6 +21,16 @@ export default {
     methods: {
         
     },
+    created() {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        const recogniton = new SpeechRecognition();
+
+        // speechRecognition Start
+        recogniton.onstart = function(){
+            console.log("Voice enable");
+        }
+    },
 }
 </script>
 <style scoped>
