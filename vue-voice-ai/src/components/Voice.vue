@@ -12,7 +12,15 @@
 
 <script>
 export default {
-    
+    name: 'Voice',
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        
+    },
 }
 </script>
 <style scoped>
