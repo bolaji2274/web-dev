@@ -29,7 +29,12 @@ export default {
         // speechRecognition Start
         recogniton.onstart = function(){
             console.log("Voice enable");
-        }
+        };
+
+        //speechRecognition End
+        recogniton.onend = function(){
+            console.log("Voice Disable");
+        };
     },
 }
 </script>
