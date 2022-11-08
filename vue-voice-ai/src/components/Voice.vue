@@ -20,7 +20,19 @@ export default {
     },
     methods: {
         onStart() {
-            recogniton.start();
+            this.recogniton.start();
+        },
+        onStop() {
+            this.recogniton.stop();
+        },
+        readOut(message){
+            const speech = new SpeechSynthesisUtterance();
+            // get differences voice 
+            const allVoices = speechSynthesis.getVoices();
+            speech.text = message;
+            speech.volume = 1;
+            window.speechSynthesis.speak(speech);
+            console.log("Speak Begin");
         }
     },
     created() {
