@@ -5,7 +5,7 @@
             <div class="btn">
                 <button id="start" @click="onStart">Voice Start</button>
                 <button id="stop" @click="onStop">Voice Stop</button>
-                <button id="speak" @click="onSpeak">Speak out</button>
+                <button id="speak" @click="readOut">Speak out</button>
             </div>
     </div>
 </template>
