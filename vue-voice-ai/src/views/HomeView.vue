@@ -1,7 +1,6 @@
 <template>
   <main>
-
-
+    <VoiceVue />
   </main>
 </template>
 
