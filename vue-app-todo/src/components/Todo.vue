@@ -12,12 +12,12 @@
 
      <div class="row">
         <div class="col-md-6">
-            <h3>Completed</h3>
+            <h3>Todo-App List</h3>
         </div>
-        <div class="col-md-6">
-            <h3>Pending</h3>
-        </div>
+
      </div>
+<TodoItemVue :todos="todos"/>
+
     </div>
 </template>
 <script>

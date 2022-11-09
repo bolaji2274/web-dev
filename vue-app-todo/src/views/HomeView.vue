@@ -1,8 +1,10 @@
 <script>
 import TodoVue from '../components/Todo.vue';
+import TodoItemVue from '../components/TodoItem.vue';
 export default{
   components:{
-    TodoVue
+    TodoVue,
+    TodoItemVue
   }
 }
 </script>
@@ -10,5 +12,7 @@ export default{
 <template>
   <main>
     <TodoVue/>
+    <TodoItemVue :todos="todos"/>
+    
 </main>
 </template>

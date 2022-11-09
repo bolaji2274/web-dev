@@ -8,7 +8,7 @@
                {{todo.description}}
             </div>
             <div class="panel-footer">
-                <button class="btn btn-success">Mark As Completed</button>
+                <button class="btn btn-success">Update</button>
                 <button class="btn btn-danger">Delete</button>
             </div>
         </div>
