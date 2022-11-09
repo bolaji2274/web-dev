@@ -22,9 +22,11 @@ export default {
 
 <style scoped>
 div {
-    display: block;
+    /* display: block; */
     /* text-align: center; */
-    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    /* align-items: center; */
 }
 form{
     font-size: 25px;
