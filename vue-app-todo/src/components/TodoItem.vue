@@ -5,7 +5,7 @@
                 {{todo.title}}
             </div>
             <div class="panel-body">
-               {{todo.description}}
+              <p> {{todo.description}} </p>
             </div>
             <div class="panel-footer">
                 <button class="btn btn-success">Update</button>

@@ -5,7 +5,7 @@
         <label for="">Title</label>
         <input v-model="todos.title" type="text" class="form-control" required>
         <label for="">Description</label>
-        <textarea v-model="todos.description" class="form-control" rows="4"></textarea>   
+        <textarea v-model="todos.description" class="form-control" rows="4" required></textarea>   
      <br>
         <button class="btn btn-success">Submit</button>
      </form> 
@@ -32,8 +32,8 @@ export default {
       return {
         todos: 
           {
-            title: 'Add Title',
-            description: 'Add Desc',
+            title: 'Add Title....',
+            description: 'Add Desc...',
         }
       }
     },
