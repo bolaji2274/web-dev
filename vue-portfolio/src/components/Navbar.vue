@@ -2,7 +2,7 @@
     <div class="nav-container">
         <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><span class="p-s">P</span> <span class="j-s">J</span> Studio</a>
+    <a class="navbar-brand" href="#"><span class="p-s">P<span class="j-s">J</span> </span> Studio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <ul class="nav justify-content-end">
-        <button type="button" class="btn btn-light">Light</button> 
+        <button type="button" class="btn btn-light">Contact us</button> 
 </ul>
   </div>
 </nav>
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 
 .nav-container{
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
 }
 .navbar {
@@ -39,6 +39,9 @@ export default {
 }
 .navbar-brand{
     font-size: 25px;
+}
+.navbar-nav a{
+    margin-left: 50px;
 }
 .p-s{
     color: black;
@@ -48,6 +51,12 @@ export default {
 }
 .btn{
     border-radius: 30px;
-    border: 2px solid '$purple-100';
+    border: 2px solid gray;
+}
+.navbar-brand .p-s{
+    letter-spacing: -7px;
+    font-size: 40px;
+    margin-right: 10px;
+    font-family: 'Poppins';
 }
 </style>
