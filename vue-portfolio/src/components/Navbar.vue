@@ -1,6 +1,6 @@
 <template>
     <div class="nav-container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><span class="p-s">P<span class="j-s">J</span> </span> Studio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,10 @@ export default {
     margin: 0 auto;
 }
 .navbar {
-    font-size: 20px;
+    font-size: 18px;
 }
 .navbar-brand{
-    font-size: 25px;
+    font-size: 15px;
 }
 .navbar-nav a{
     margin-left: 50px;

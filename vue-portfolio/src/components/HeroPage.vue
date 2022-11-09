@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <p>speeed up communication</p>
     </div>
 </template>
 
