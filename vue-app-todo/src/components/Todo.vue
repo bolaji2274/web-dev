@@ -5,16 +5,16 @@
         <label for="">Title</label>
         <input type="text" class="form-control" required>
         <label for="">Description</label>
-        <input type="text" class="form-control">
-        <br>
+        <textarea class="form-control" rows="4"></textarea>   
+     <br>
         <button class="btn btn-success">Submit</button>
      </form> 
 
      <div class="row">
-        <div class="colum">
+        <div class="col-md-6">
             <h3>Completed</h3>
         </div>
-        <div class="colum">
+        <div class="col-md-6">
             <h3>Pending</h3>
         </div>
      </div>
