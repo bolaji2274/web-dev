@@ -3,15 +3,12 @@
        <h1>Todo-List App</h1>
      <form>
         <label for="">Title</label>
-        <br>
-        <input type="text" class="input-title" required>
-        <br>
+        <input type="text" class="form-control" required>
         <label for="">Description</label>
+        <input type="text" class="form-control">
         <br>
-        <input type="text" class="desc">
-        <br>
-        <button class="btn">Submit</button>
-     </form>
+        <button class="btn btn-success">Submit</button>
+     </form> 
 
      <div class="row">
         <div class="colum">
@@ -30,12 +27,9 @@ export default {
 </script>
 
 <style scoped>
-div {
-    /* display: block; */
-    /* text-align: center; */
+/* div {
     margin: auto;
     width: 50%;
-    /* align-items: center; */
 }
 form{
     font-size: 25px;
@@ -51,7 +45,6 @@ label{
     height: 80px;
 }
 input[type=text], select {
-  /* width: 100px; */
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -73,14 +66,13 @@ input[type=text], select {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; 
 }
 
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 </style>
