@@ -3,9 +3,9 @@
        <h1>Todo-List App</h1>
      <form @submit="createTodo">
         <label for="">Title</label>
-        <input v-model="todos.title" type="text" class="form-control" required>
+        <input v-model="title" type="text" class="form-control" required>
         <label for="">Description</label>
-        <textarea v-model="todos.description" class="form-control" rows="4" required></textarea>   
+        <textarea v-model="description" class="form-control" rows="4" required></textarea>   
      <br>
         <button class="btn btn-success">Submit</button>
      </form> 
@@ -30,17 +30,18 @@ export default {
     },
     data() {
       return {
-        todos: 
+        todos: [
           {
             title: 'Add Title....',
             description: 'Add Desc...',
         }
+      ]
       }
     },
     methods: {
       createTodo(e) {
         e.preventDefault();
-        alert(`This tile ${this.title} and description ${this.description}`);
+        this.todos.Ob
       }
     },
 }
