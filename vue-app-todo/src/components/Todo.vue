@@ -22,10 +22,12 @@
 </template>
 <script>
 import TodoListVue from './TodoList.vue';
+import TodoItemVue from './TodoItem.vue';
 export default {
     name: 'app',
     components: {
-      TodoListVue
+      TodoListVue,
+      TodoItemVue
     },
     data() {
       return {
