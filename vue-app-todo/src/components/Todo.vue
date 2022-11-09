@@ -1,11 +1,11 @@
 <template>
     <div class="container">
        <h1>Todo-List App</h1>
-     <form>
+     <form @submit="createTodo">
         <label for="">Title</label>
-        <input type="text" class="form-control" required>
+        <input v-model="title" type="text" class="form-control" required>
         <label for="">Description</label>
-        <textarea class="form-control" rows="4"></textarea>   
+        <textarea v-model="description" class="form-control" rows="4"></textarea>   
      <br>
         <button class="btn btn-success">Submit</button>
      </form> 
@@ -31,6 +31,13 @@ export default {
       return {
         title: '',
         description: '',
+      }
+    },
+    methods: {
+      createTodo(e) {
+        e.preventDefault();
+        alert('created');
+        
       }
     },
 }
