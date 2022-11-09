@@ -5,7 +5,7 @@
                 {{todo.title}}
             </div>
             <div class="panel-body">
-                Todo Description
+               {{todo.description}}
             </div>
             <div class="panel-footer">
                 <button class="btn btn-success">Mark As Completed</button>
