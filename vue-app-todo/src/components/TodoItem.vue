@@ -2,7 +2,7 @@
     <div class="card">
         <div class="panel panel-default">
             <div class="panel-header">
-                Title
+                {{todo.title}}
             </div>
             <div class="panel-body">
                 Todo Description
@@ -14,3 +14,18 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'todo-item',
+    props: ['todo'],
+    methods: {
+        completed(){
+
+        },
+        deleteTodo(){
+
+        }
+    },
+}
+</script>
