@@ -3,13 +3,12 @@
        <h1>Todo-List App</h1>
      <form @submit="createTodo">
         <label for="">Title</label>
-        <input v-model="title" type="text" class="form-control" required>
+        <input v-model="todos.title" type="text" class="form-control" required>
         <label for="">Description</label>
-        <textarea v-model="description" class="form-control" rows="4"></textarea>   
+        <textarea v-model="todos.description" class="form-control" rows="4"></textarea>   
      <br>
         <button class="btn btn-success">Submit</button>
      </form> 
-
      <div class="row">
         <div class="col-md-6">
             <h3>Todo-App List</h3>
@@ -31,12 +30,11 @@ export default {
     },
     data() {
       return {
-        todos: [
+        todos: 
           {
             title: 'Add Title',
             description: 'Add Desc',
         }
-      ]
       }
     },
     methods: {
