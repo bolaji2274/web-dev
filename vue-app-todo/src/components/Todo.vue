@@ -29,15 +29,16 @@ export default {
     },
     data() {
       return {
-        title: '',
-        description: '',
+        todos: [{
+          title: '',
+          description: '',
+        }]
       }
     },
     methods: {
       createTodo(e) {
         e.preventDefault();
-        alert('created');
-        
+        alert(`This tile ${this.title} and description ${this.description}`);
       }
     },
 }
