@@ -25,7 +25,7 @@
 
 <script>
 export default {
-
+    
 }
 </script>
 <style scoped>
@@ -41,7 +41,7 @@ export default {
     font-size: 15px;
 }
 .navbar-nav a{
-    margin-left: 50px;
+    margin-left: 35px;
 }
 .p-s{
     color: black;
