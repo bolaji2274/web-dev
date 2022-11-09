@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-       <h1>Todo-List App</h1>
+       <h1 style="text-align: center;">Todo-List App</h1>
      <form @submit="createTodo">
         <label for="">Title</label>
         <input v-model="title" type="text" class="form-control" required>
