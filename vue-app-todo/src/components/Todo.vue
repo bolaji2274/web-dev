@@ -29,10 +29,12 @@ export default {
     },
     data() {
       return {
-        todos: [{
-          title: '',
-          description: '',
-        }]
+        todos: [
+          {
+            title: '',
+            description: '',
+        }
+      ]
       }
     },
     methods: {

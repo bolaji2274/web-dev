@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div class="panel panel-default">
+        <div class="panel panel-default" v-for="todo in todos" :key="todo">
             <div class="panel-header">
                 {{todo.title}}
             </div>
@@ -18,7 +18,7 @@
 <script>
 export default {
     name: 'todo-item',
-    props: ['todo'],
+    props: ['todos'],
     methods: {
         completed(){
 
