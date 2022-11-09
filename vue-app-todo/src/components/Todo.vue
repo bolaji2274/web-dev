@@ -17,5 +17,13 @@ export default {
 </script>
 
 <style scoped>
+div {
+    display: block;
+    text-align: center;
+}
+form{
+    margin: 15px;
+    display: inline-block;
+}
 
 </style>
