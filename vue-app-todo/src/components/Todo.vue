@@ -21,8 +21,18 @@
     </div>
 </template>
 <script>
+import TodoListVue from './TodoList.vue';
 export default {
-    
+    name: 'app',
+    components: {
+      TodoListVue
+    },
+    data() {
+      return {
+        title: '',
+        description: '',
+      }
+    },
 }
 </script>
 
