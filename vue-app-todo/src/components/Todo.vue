@@ -33,8 +33,8 @@ export default {
       return {
         todos: [
           {
-            title: '',
-            description: '',
+            title: 'Add Title',
+            description: 'Add Desc',
         }
       ]
       }
