@@ -7,6 +7,9 @@
             <div class="panel-body">
                 Todo Description
             </div>
+            <div class="panel-footer">
+                <button class="btn btn-success">Mark As Completed</button>
+            </div>
         </div>
     </div>
 </template>
