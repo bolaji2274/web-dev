@@ -8,6 +8,8 @@
         <input type="text" class="input-title" required>
         <label for="">Description</label>
         <textarea name="" id="" cols="30" rows="10" required></textarea>
+        <br>
+        <button class="btn">Submit</button>
      </form>
     </div>
 </template>
