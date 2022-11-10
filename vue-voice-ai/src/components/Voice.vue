@@ -72,12 +72,19 @@ recogniton.onend = function(){
 
 
 // function for start and stop
-startBtn.addEventListener("click", () => {
+// startBtn.addEventListener("click", () => {
+//     recogniton.start();
+// });
+// stopBtn.addEventListener("click", () => {
+//     recogniton.stop();
+// });
+
+onStart = () => {
     recogniton.start();
-});
-stopBtn.addEventListener("click", () => {
+}
+onStop = () => {
     recogniton.stop();
-});
+}
 
 // Speech speak
 
