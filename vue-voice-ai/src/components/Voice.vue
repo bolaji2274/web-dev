@@ -117,6 +117,13 @@ div.container{
   max-width: 60%;
   margin: 0 auto;
 }
+div.container h1{
+    text-transform: uppercase;
+    color: hsl(239, 78%, 14%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 4px 6px 2px #d16ba5;
+}
 .heart{
     position: relative;
     height: 160px;
