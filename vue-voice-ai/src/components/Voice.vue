@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
     <div class="container">
             <h1 style="text-align: center;">Hi welcome voice ai</h1>
                 <div class="heart"></div>
@@ -109,6 +109,9 @@ function readOut(message){
 
 </script>
 <style scoped>
+.main{
+    background: #d16ba5;
+}
 div.container{
   background: aqua;
   max-width: 60%;
