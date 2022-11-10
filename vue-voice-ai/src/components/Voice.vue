@@ -1,4 +1,5 @@
 <template>
+    <div>
     <div class="container">
             <h1 style="text-align: center;">Hi welcome voice ai</h1>
                 <div class="heart"></div>
@@ -8,6 +9,7 @@
                 <button id="speak" @click="readOut">Speak out</button>
             </div>
     </div>
+</div>
 </template>
 
 <script setup>
@@ -131,6 +133,10 @@ div.container{
     border-radius: 200px 200px 0 0;
     left: -30px;
     top: 30px;
+}
+.btn{
+    margin-left: 18%;
+    margin-top: 10%;
 }
 .btn button{
     padding: 10px;
