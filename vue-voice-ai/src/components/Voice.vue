@@ -79,10 +79,10 @@ recogniton.onend = function(){
 //     recogniton.stop();
 // });
 
-onStart = () => {
+let onStart = () => {
     recogniton.start();
 }
-onStop = () => {
+let onStop = () => {
     recogniton.stop();
 }
 
