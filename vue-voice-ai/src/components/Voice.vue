@@ -10,88 +10,8 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Voice',
-    data() {
-        return {
-            
-        }
-    },
-    methods: {
-        onStart() {
-            this.recogniton.start();
-        },
-        onStop() {
-            this.recogniton.stop();
-        },
-        readOut(message){
-            const speech = new SpeechSynthesisUtterance();
-            // get differences voice 
-            const allVoices = speechSynthesis.getVoices();
-            speech.text = message;
-            speech.volume = 1;
-            window.speechSynthesis.speak(speech);
-            console.log("Speak Begin");
-        }
-    },
-    created() {
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+<script setup>
 
-        const recogniton = new SpeechRecognition();
-
-        // speechRecognition Start
-        recogniton.onstart = function(){
-            console.log("Voice enable");
-        };
-        //   speechRecogniton on Result
-        recogniton.onresult = function(event){
-            let current = event.resultIndex;
-            let transcript = event.results[current][0].transcript;
-            transcript = transcript.toLowerCase();
-            console.log(`My word : ${transcript}`);
-            if (transcript.includes("good evening")){
-                this.readOut("evening sir");
-            }
-            if (transcript.includes("open youtube")){
-                this.readOut("okay sir.i am opening || youtube for you sir");
-                open("https://www.youtube.com/");
-            }
-            if (transcript.includes("open google")){
-                this.readOut("okay sir.i am opening google for you sir");
-                open("https://www.google.com/");
-            }
-            if (transcript.includes("open github") ||
-                transcript.includes('git')){
-                this.readOut("okay sir.i am opening github for you sir");
-                open("https://www.github.com/");
-            }
-            // how to treat two sylablle
-            if (
-                transcript.includes("open firebase") || 
-                transcript.includes("open fire base"))
-                {
-                this.readOut("okay sir.i am opening firebase for you sir");
-                open("https://www.firebase.com/");
-            }
-            if (transcript.includes("what is today's date")) {
-                const date = new Date();
-
-                let day = date.getDate();
-                let month = date.getMonth() + 1;
-                let year = date.getFullYear();
-
-                // This arrangement can be altered based on how we want the date's format to appear.
-                let currentDate = `${day}-${month}-${year}`;
-                this.readOut(currentDate);
-            };
-        };
-        //speechRecognition End
-        recogniton.onend = function(){
-            console.log("Voice Disable");
-        };
-    },
-}
 </script>
 <style scoped>
 div.container{
