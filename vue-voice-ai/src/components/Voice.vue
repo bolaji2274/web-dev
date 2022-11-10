@@ -109,6 +109,8 @@ function readOut(message){
 <style scoped>
 div.container{
   background: aqua;
+  max-width: 60%;
+  margin: 0 auto;
 }
 .heart{
     position: relative;
@@ -131,8 +133,6 @@ div.container{
     top: 30px;
 }
 .btn{
-    margin-left: 40%;
-    margin-top: 10%;
     padding: 10px;
     letter-spacing: 4px;
     text-transform: uppercase;
