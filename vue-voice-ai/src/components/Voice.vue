@@ -98,9 +98,10 @@ function readOut(message){
     console.log("Speak Begin");
 }
 
-speakBtn.addEventListener("click", () => {
-    readOut("Hi, Bolaji Ammed .my dear lovers, let code a simple voice artificial inteligence using web API")
-})
+// speakBtn.addEventListener("click", () => {
+//     readOut("Hi, Bolaji Ammed .my dear lovers, let code a simple voice artificial inteligence using web API")
+// })
+
 
 
 
