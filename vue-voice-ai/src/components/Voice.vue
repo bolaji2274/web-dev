@@ -132,8 +132,10 @@ div.container{
     left: -30px;
     top: 30px;
 }
-.btn{
+.btn button{
     padding: 10px;
+    max-width: 70%;
+    margin: 10px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
