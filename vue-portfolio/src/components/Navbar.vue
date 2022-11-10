@@ -25,7 +25,7 @@
 
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>
@@ -33,6 +33,7 @@ export default {
 .nav-container{
     max-width: 90%;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .navbar {
     font-size: 18px;
