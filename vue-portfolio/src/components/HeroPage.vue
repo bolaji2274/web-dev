@@ -1,8 +1,18 @@
 <template>
-    <div>
+    <!-- <div>
         <p>speeed up communication</p>
         <h1>Hi I'm Bolaji Hammed Adekunle</h1>
+    </div> -->
+     <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+        One of three columns
+        </div>
+        <div class="col-md-4">
+        One of three columns
+        </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -12,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-div{
+/* div{
     margin-left: 10%;
     margin-top: 10%;
 }
@@ -22,5 +32,5 @@ div p{
 }
 div h1{
     width: 300px;
-}
+} */
 </style>
