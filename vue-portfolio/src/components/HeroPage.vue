@@ -41,22 +41,24 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            name: 'Hi I\'m Bolaji Hammed',
+            speed: 'speed up communications',
+            studio: 'AU Studio is the place for everything related a project, to-do-list or communication',
+            hire: 'Hire Me',
+            icons: [
+                {title: 'fa-brands fa-instagram'},
+                {title: 'fa-brands fa-twitter'},
+                {title: 'fa-brands fa-facebook-f'}
+            ]
+        }
+    },
 }
 </script>
 
 <style scoped>
-/* div{
-    margin-left: 10%;
-    margin-top: 10%;
-}
-div p{
-    color: red;
-    width: 100px;
-}
-div h1{
-    width: 300px;
-} */
+
 .container{
     max-height: 90%;
     margin: 0 auto;
@@ -98,16 +100,26 @@ div.sec-collum{
     height: 700px;
     border-radius: 20px;
 }
+.image-content{
+    position: relative;
+    top: 90px;
+}
 div.image-content p.user{
     float: right;
     width: 120px;
-    font-size: 14px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 10px;
     margin-top: 0px;
     margin-right: 70px;
-    border-radius: 10px;
-    color: rgb(103, 157, 190);
-    background-color: #fff;
+    border-radius: 8px;
+    color: rgb(29, 108, 228);
+    background-color: rgb(243, 221, 221);
     cursor: pointer;
+    position: relative;
+    bottom: 150px;
+    opacity: 0.6;
 }
 div.great{
     width: 200px;

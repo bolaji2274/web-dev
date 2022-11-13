@@ -7,15 +7,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link">Pricing</a>
+      <div class="navbar-nav" v-for="link in links" :key="link">
+        <a class="nav-link active" aria-current="page" href="#">{{link.name}}</a>
       </div>
     </div>
     <ul class="nav justify-content-end">
-        <button type="button" class="btn btn-light">Contact us</button> 
+        <button type="button" class="btn btn-light">{{contact}}</button> 
 </ul>
   </div>
 </nav>
@@ -25,7 +22,17 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            links: [
+                {name: 'Home'},
+                {name: 'About'},
+                {name: 'Portfolio'},
+                {name: 'Pricing'}
+            ],
+            contact: 'Contact us'
+        }
+    },
 }
 </script>
 <style scoped>

@@ -86,6 +86,7 @@ ul {
 }
 
 .footer {
+    /* #24262b */
     background-color: #24262b;
     padding: 70px 0;
 }
