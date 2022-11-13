@@ -1,8 +1,12 @@
 <script>
 import HeroPageVue from '../components/HeroPage.vue';
+import ServicesVue from '../components/Services.vue';
+import FootersVue from '../components/Footers.vue';
 export default{
   components:{
-    HeroPageVue
+    HeroPageVue,
+    ServicesVue,
+    FootersVue
   }
 }
 
@@ -11,5 +15,7 @@ export default{
 <template>
   <main>
     <HeroPageVue/>
+    <ServicesVue/>
+    <FootersVue/>
   </main>
 </template>

@@ -3,7 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import NavbarVue from './components/Navbar.vue';
 export default{
   components: {
-    NavbarVue
+    NavbarVue,
+  
   }
 }
 
@@ -13,6 +14,8 @@ export default{
   <header>
     <NavbarVue/>
   </header>
+
+
 
   <RouterView />
 </template>
