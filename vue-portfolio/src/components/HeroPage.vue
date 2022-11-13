@@ -9,7 +9,7 @@
                 <p class="studio">AU Studio is the place for everything related
                     a project, to-do-list or communication
                 </p>
-                <button type="button" class="btn btn-primary">Hire Me</button>
+                <button type="button" class="btn btn-primary">Hire Me</button> <span class="triangle">&#9658;</span>
                 <div class="icons-tag">
                     <div class="row">
                         <div class="col">
@@ -32,6 +32,7 @@
                 <p><span>&hearts;</span> Great Project</p>
                 <h2>212+ Done</h2>
                 <h3><span>2.1%</span> vs last 7 days</h3>
+                <span style="text-align: center; font-size: 30px; margin: 0 auto;">&#9658;</span>
             </div>
         </div>
         </div>
@@ -106,7 +107,6 @@ div.sec-collum{
 }
 div.image-content p.user{
     float: right;
-    width: 120px;
     height: 40px;
     font-size: 13px;
     font-weight: bold;
@@ -146,9 +146,17 @@ div.great h2{
 }
 div.great h3{
     font-size: 11px;
+    margin-bottom: 0px;
 }
 div.great h3 span{
     color: rgb(21, 197, 21);
+}
+.triangle{
+    color: blue;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 20px;
+    padding-top: 20px;
 }
 button.btn{
     border-radius: 20px;
