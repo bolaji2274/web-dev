@@ -60,10 +60,10 @@ export default {
 
 <style scoped>
 
-.container{
-    max-height: 90%;
+/* .container{
+    max-height: 70%;
     margin: 0 auto;
-}
+} */
 /* .col-lg-5{
     margin-top: 20%;
 } */
@@ -98,7 +98,8 @@ div.sec-collum{
     background: url('about.jpg');
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 450px;
+    width: 100%;
     border-radius: 20px;
 }
 .image-content{

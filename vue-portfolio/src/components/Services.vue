@@ -54,10 +54,7 @@ export default {
     bottom: -6;
 }
 .row{
-    display: flex;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-    margin: -12px;
+    
 }
 .card-img-top{
     height: 240px;
