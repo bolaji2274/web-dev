@@ -5,7 +5,7 @@
                 <hr>
                 <div class="col-md-6 first-col">
                     <div class="texts">
-                        <h1>Hi! I Am <span class="span-text">UI/UX</span> Bolaji Hammed</h1>
+                        <h1>Hi! I Am <span class="span-text">UI/UX</span> <marquee behavior="alternate" scrollamount="30" direction="right">Bolaji Hammed</marquee> </h1>
                         <p class="text-design">Designing a user interfaces for over <span style="font-weight: bold;">7 years</span> as a product designer</p>
                         <div class="row inner-row">
                             <div class="col">
