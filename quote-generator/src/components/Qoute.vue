@@ -6,12 +6,11 @@
         </div>
         <div class="main-content">
             <div class="text-area">
-                <span class="quteo">
-                    "I do the very best I know - the very best I
-                    can; and I mean to keep on doing so until the end"
+                <span class="quote">
+                   {{qoute.content}}
                 </span>
             </div>
-            <div class="person">Abraham Lincoln</div>
+            <div class="person">{{qoute.anime}}</div>
 
             <div class="button-area">
                 <button id="new-qoute" @click="newQoute">New Qoute</button>
@@ -24,13 +23,28 @@
 export default{
     data() {
         return {
-            
+            qoute: {
+        content: ' "I do the very best I know - the very best I can; and I mean to keep on doing so until the end"',
+        anime: 'Abraham Lincoln',
+        character: 'Madara'
         }
+    }
     },
     methods: {
-        newQoute() {
+        async newQoute() {
             // let random = Math.floor(Math.random() * qotes.length);
+            const data = await fetch('https://animechan.vercel.app/api/random').then(res => res.json());
+
+            this.qoute = {
+                content: data.quote,
+                anime: data.anime,
+                character: data.character
         }
+        
+    }
+    },
+        created() {
+        this.newQoute();
     },
 }
 </script>
