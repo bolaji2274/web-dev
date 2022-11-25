@@ -1,6 +1,6 @@
 <template>
     <div class="body">
-    <div class="container">
+    <div class="container" v-on:mousemove="onStart">
         <div class="header">
             <h2>Goute Generator</h2>
         </div>
@@ -10,13 +10,15 @@
                    {{qoute.content}}
                 </span>
             </div>
-            <div class="person">{{qoute.anime}}</div>
+            <div class="person">{{qoute.character}}</div>
 
             <div class="button-area">
                 <button id="new-qoute" @click="newQoute">New Qoute</button>
             </div>
         </div>
     </div>
+    <!-- <button @click="onStart">Start BTN</button>
+    <button @click="onStop">Stop BTN</button> -->
     </div>
 </template>
 <script>
@@ -40,11 +42,26 @@ export default{
                 anime: data.anime,
                 character: data.character
         }
+        this.readOut(`${this.qoute.character} said ${this.qoute.content}`);
+
         
-    }
+    },
+       
+        readOut(message){
+            const speech = new SpeechSynthesisUtterance();
+            // get differences voice 
+            const allVoices = speechSynthesis.getVoices();
+            speech.text = message;
+            speech.volume = 1;
+            window.speechSynthesis.speak(speech);
+            console.log("Speak Begin");
+        }
+
     },
         created() {
         this.newQoute();
+        this.readOut("Hi, Welcome To Qoute generator API service, You are welcome to be here . Thanks.");
+
     },
 }
 </script>
