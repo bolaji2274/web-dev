@@ -3,8 +3,11 @@
     <div class="container" v-on:mousemove="onStart">
         <div class="header">
             <h2>Goute Generator</h2>
+        </div>  
+        <div class="loading"  v-if="loading">
+            <p>loading ........</p>
         </div>
-        <div class="main-content">
+        <div class="main-content" v-if="!loading"> 
             <div class="text-area">
                 <span class="quote">
                    {{qoute.content}}
@@ -25,10 +28,11 @@
 export default{
     data() {
         return {
+            loading: true,
             qoute: {
-        content: ' "I do the very best I know - the very best I can; and I mean to keep on doing so until the end"',
-        anime: 'Abraham Lincoln',
-        character: 'Madara'
+        content: '',
+        anime: '',
+        character: ''
         }
     }
     },
@@ -36,7 +40,7 @@ export default{
         async newQoute() {
             // let random = Math.floor(Math.random() * qotes.length);
             const data = await fetch('https://animechan.vercel.app/api/random').then(res => res.json());
-
+            
             this.qoute = {
                 content: data.quote,
                 anime: data.anime,
@@ -44,7 +48,7 @@ export default{
         }
         this.readOut(`${this.qoute.character} said ${this.qoute.content}`);
 
-        
+        this.loading = false;        
     },
        
         readOut(message){
@@ -98,7 +102,7 @@ export default{
 }
 .main-content{
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     background-color: #fff;
     border-radius: 15px;
     padding: 50px 40px;
@@ -123,5 +127,9 @@ export default{
 }
 .button-area button:active {
     background-color: lightblue;
+}
+.loading{
+    color: white;
+    font-size: 1.5rem;
 }
 </style>
