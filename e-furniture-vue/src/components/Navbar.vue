@@ -23,6 +23,7 @@
 
                     <li class="btn btn-light"><a href="#">Login</a></li>
                     <li class="btn btn-light"><a href="#">Sign Up</a></li>
+                    <li> <i class="fa-solid fa-box-check"></i> </li>
                 </ul>
             </div>
         </nav>
