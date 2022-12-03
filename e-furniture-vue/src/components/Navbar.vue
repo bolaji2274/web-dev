@@ -15,13 +15,14 @@
                     <div class="search">
                         <form action="">
                             <input type="search" class="search" placeholder="Search">
-                            <button type="submit"><i class="fa-regular fa-magnifying-glass"></i> </button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
                         </form>
                     </div>
                 </div>
                 <ul class="nav justify-content-end">
-                    <button type="button" class="btn btn-light">{{ contact }}</button>
-                    <i class="fa-sharp fa-solid fa-backward"></i>
+
+                    <li class="btn btn-light"><a href="#">Login</a></li>
+                    <li class="btn btn-light"><a href="#">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -52,20 +53,55 @@ export default {
     box-sizing: border-box;
 }
 .nav-container{
-    margin-top: 20px;
     max-width: 100%;
     margin: 30px auto;
     background-color: #f5f5f5;
     height: 100px;
 }
-.container-fluid{
+.nav-container .container-fluid{
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 70%;
-    margin: 30px auto;
+    margin: 20px auto;
+}
+img{
+    border-style: none;
+    border: 0;
+    vertical-align: middle;
+    height: 60px;
 }
 a img{
     border: 0;
+}
+form{
+    width: 100%;
+    height: 37px;
+}
+form input{
+    padding: 7px 9px 6px 20px;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 0.4;
+    font-size: 13px;
+}
+form button{
+    height: 36.5px;
+    width: 60px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #6f5948;
+    color: #fff;
+    transition: 0.8s;
+}
+.search button:hover{
+    opacity: 0.6;
+}
+ul li{
+    margin-left: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 </style>
