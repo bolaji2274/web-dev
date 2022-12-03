@@ -2,7 +2,7 @@
 <div class="nav-container">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><span class="p-s">P<span class="j-s">J</span> </span> Studio</a>
+                <a class="navbar-brand" href="#"><img src="../../images/logo_1.avif" style="max-width: 205px" alt="Furni"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -64,5 +64,8 @@ export default {
     justify-content: center;
     max-width: 70%;
     margin: 30px auto;
+}
+a img{
+    border: 0;
 }
 </style>
