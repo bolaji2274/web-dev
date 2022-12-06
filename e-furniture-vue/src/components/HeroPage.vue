@@ -102,6 +102,7 @@ export default {
   background-image: url('../../images/img1.webp');
   background-size: cover;
   background-position: center;
+  height: 125%;
 }
 .colum-1:hover{
   display: block;
