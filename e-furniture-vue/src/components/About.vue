@@ -6,20 +6,39 @@
             <div class="col-md-3 colum-1">
                <div class="text-content">
                 <p>Alex Study Chair</p>
-                <p class="price">$208.00</p>
+                <p class="price">$ 208.00</p>
                </div>
             </div>
             <div class="col-md-3 colum-2">
-                
+                <div class="text-content">
+                <p>Brommstick chair</p>
+                <p class="price">$ 178.00</p>
+               </div>
             </div>
             <div class="col-md-3 colum-3">
-                
+                <div class="text-content">
+                <p>Amet Kairfort</p>
+                <p class="price">$ 756.00</p>
+               </div>
             </div>
             <div class="col-md-3 colum-4">
-              
+                <div class="text-content">
+                <p>Fuastick chair</p>
+                <p class="price">$ 178.00</p>
+               </div>
+            </div>
+        </div>   
+    </div>
+    <div class="section-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Hello World</h1>
+                </div>
+                <div class="col-md-6">
+                    <h1>Hello Woerld</h1>
+                </div>
             </div>
         </div>
-    </div>
   </div>
 </template>
 
@@ -65,17 +84,20 @@ export default {
     border-color: #e3e1e0;
     position: relative;
 }
-.colum-1 .text-content{
+.text-content{
     text-align: center;
     position: absolute;
     left: 90px;
     bottom: -6px;
 }
-.colum-1 .text-content p{
+.text-content p{
     font-size: 12px;
+    font-weight: bold;
     margin-top: 20%;
 }
-
+.text-content p.price{
+    font-weight: bold;
+}
 .colum-2{
     background-image: url('../../images/p8_600x.webp');
     background-repeat: no-repeat;
@@ -83,15 +105,17 @@ export default {
     background-position: center;
     border: 10px solid;
     border-color: #e3e1e0;
+    position: relative;
 }
 .colum-3{
     flex-basis: 24%;
-    background-image: url('../../images/p2_600x.webp');
+    background-image: url('../../images/p10_600x.webp');
     background-repeat: no-repeat;
     background-size: 300px;
     background-position: center;
     border: 10px solid #6f5948;
     border-color: #e3e1e0;
+    position: relative;
 }
 
 .colum-4{
@@ -102,5 +126,7 @@ export default {
     background-position: center;
     border: 10px solid #6f5948;
     border-color: #e3e1e0;
+    position: relative;
 }
+
 </style>
