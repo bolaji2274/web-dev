@@ -22,10 +22,20 @@
             </div>
         </div>
         <div class="colum-2">
-          <h1>Hello World</h1>
+          <div class="text">
+              <p>Relax with yourself</p>
+              <h1>Coffe Tables</h1>
+              <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
+              <button type="submit" class="myBtn">SHOP NOW</button>
+            </div>
         </div>
         <div class="colum-3">
-          <h1>Hello here</h1>
+          <div class="text">
+              <p>Relax with yourself</p>
+              <h1>Coffe Tables</h1>
+              <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
+              <button type="submit" class="myBtn">SHOP NOW</button>
+            </div>
         </div>
         </div>
       </div>
@@ -127,7 +137,7 @@ export default {
   align-items: center;
   text-align: center;
   max-width: 80%;
-  color: #fff;
+  color: rgb(234, 220, 220);
   margin: 50% auto;
   font-size: 12px;
 
