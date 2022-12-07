@@ -30,13 +30,9 @@
         </div>   
     </div>
     <div class="section-2">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Hello World</h1>
-                </div>
-                <div class="col-md-6">
-                    <h1>Hello Woerld</h1>
-                </div>
+            <div class="row row2">
+                <div class="col-md-6 detail-1">  </div>
+                <div class="col-md-6 detail-2">  </div>
             </div>
         </div>
   </div>
@@ -61,6 +57,7 @@ export default {
     height: 500px;
     margin: 0 auto;
     margin-top: -40px;
+    margin-bottom: 3%;
 }
 .container p{
     color: #6f5948;
@@ -72,7 +69,7 @@ export default {
     justify-content: space-between;
     margin-right: 10px;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .colum-1{
     flex-basis: 24%;
@@ -128,5 +125,27 @@ export default {
     border-color: #e3e1e0;
     position: relative;
 }
+.section-2{
+    width: 100%;
+    max-width: 90%;
+    height: 370px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+.row2{
+    height: 100%;
+}
+.detail-1{
+    flex-basis: 49.8%;
+    background-image: url('../../images/img4.webp');
+    background-size: cover;
+    background-position: center;
+}
 
+.detail-2{
+    flex-basis: 49.7%;
+    background-image: url('../../images/img5.webp');
+    background-size: 100%;
+    background-position: center;
+}
 </style>
