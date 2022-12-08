@@ -23,16 +23,16 @@
         </div>
         <div class="colum-2">
           <div class="text">
-              <p>Relax with yourself</p>
-              <h1>Coffe Tables</h1>
+              <p>Unwind with Tea</p>
+              <h1>Side Tables</h1>
               <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
               <button type="submit" class="myBtn">SHOP NOW</button>
             </div>
         </div>
         <div class="colum-3">
           <div class="text">
-              <p>Relax with yourself</p>
-              <h1>Coffe Tables</h1>
+              <p>Poll Side Corner</p>
+              <h1>Dining Tables</h1>
               <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
               <button type="submit" class="myBtn">SHOP NOW</button>
             </div>
@@ -112,12 +112,6 @@ export default {
   background-image: url('../../images/img1.webp');
   background-size: cover;
   background-position: center;
-  height: 125%;
-}
-.colum-1:hover{
-  display: block;
-  background-color: #6f5948;
-  opacity: 0.6;
 }
 .colum-2{
   flex-basis: 33%;
@@ -137,7 +131,7 @@ export default {
   align-items: center;
   text-align: center;
   max-width: 80%;
-  color: rgb(234, 220, 220);
+  color: #6f5948;
   margin: 50% auto;
   font-size: 12px;
 

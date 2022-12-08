@@ -27,7 +27,10 @@
                 <p class="price">$ 178.00</p>
                </div>
             </div>
-        </div>   
+        </div> 
+           <div class="read-more">
+            <h2><a href="#">Read More</a></h2>
+           </div>
     </div>
     <div class="section-2">
             <div class="row row2">
@@ -75,8 +78,8 @@ export default {
     flex-basis: 24%;
     background-image: url('../../images/p1_600x.webp');
     background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
+    background-size: 250px;
+    background-position: center top;
     border: 10px solid #6f5948;
     border-color: #e3e1e0;
     position: relative;
@@ -98,8 +101,8 @@ export default {
 .colum-2{
     background-image: url('../../images/p8_600x.webp');
     background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
+    background-size: 250px;
+    background-position: center top;
     border: 10px solid;
     border-color: #e3e1e0;
     position: relative;
@@ -108,8 +111,8 @@ export default {
     flex-basis: 24%;
     background-image: url('../../images/p10_600x.webp');
     background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
+    background-size: 250px;
+    background-position: center top;
     border: 10px solid #6f5948;
     border-color: #e3e1e0;
     position: relative;
@@ -119,11 +122,18 @@ export default {
     flex-basis: 24%;
     background-image: url('../../images/p14_600x.webp');
     background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
+    background-size: 250px;
+    background-position: center top;
     border: 10px solid #6f5948;
     border-color: #e3e1e0;
     position: relative;
+}
+.read-more h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.read-more h2 a{
+    color: #6f5948;
 }
 .section-2{
     width: 100%;
