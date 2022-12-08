@@ -12,9 +12,9 @@
       <div class="description">
         <div class="container overflow-hidden">
           <div class="row gy-5">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class=" border">
-                <div class="text-content colum1">
+                <div class="colum1">
                     <h5>Category</h5>
                     <hr>
                     <div class="list-content">
@@ -30,28 +30,33 @@
                     </li>
                     </ul>
                     </div>
-                    <div class="text-content">
+                    <div class="text-contents">
                         <h4>Best Seller</h4>
                     </div>
-                    <div class="best-seller">
-
+                    <div class="best-seller text-center">
+                        <div class="text-content">
+                            <p>Hetal Enterprises Chair</p>
+                            <p class="price">$106.00</p>
+                        </div>
                     </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-9">
               <div class="p-3 border bg-light">
-
-              </div>
+                    <div class="row g-2">
+                            <div class="col-6">
+                            <div class="p-3 border bg-light">
+                                <img src="../../images/p12_600x.webp" width="100%" height="100%" class="img" alt="">
+                            </div>
+                            </div>
+                            <div class="col-6">
+                            <div class="p-3 border bg-light">Custom column padding</div>
+                            </div>
+                </div>
             </div>
-
-            <div class="col-md-5">
-              <div class="p-3 border bg-light">
-
-              </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -110,23 +115,8 @@ export default {};
 .colum1{
     color: #6f5948;
     font-size: 14px;
-    /* margin-left: 0px; */
 }
-.colum1 h1{
-    position: relative;
-}
-.colum1 h1::after{
-    content: '';
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -5%;
-    background-color: #6f5948;
-    border-width: 0 0 1px;
-    border-style: solid;
-    border-color: #6f5948;
-}
+
 .list-content ul li{
     margin-left: -30px;
     list-style: none;
@@ -145,10 +135,30 @@ export default {};
 }
 .best-seller{
     widows: 100%;
-    height: 200px;
-    background-image: url('../../images/img4.webp');
-    background-position: center;
-    background-size: 300px;
+    height: 350px;
+    background-image: url('../../images/p12_600x.webp');
+    background-position: center top;
+    background-size: 200px 200px;
     background-repeat: no-repeat;
+    border: 8px solid #e3e1e0;
+    margin-top: 30px;
+    position: relative;
+}
+.text-content{
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    bottom: -6px;
+}
+.text-content p{
+    font-size: 12px;
+    width: 80%;
+    font-weight: bold;
+    margin-top: 20%;
+}
+.text-content p.price{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 </style>
