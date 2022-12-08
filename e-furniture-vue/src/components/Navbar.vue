@@ -55,7 +55,7 @@ export default {
 }
 .nav-container{
     max-width: 100%;
-    margin: 30px auto;
+    margin: 0 auto;
     background-color: #f5f5f5;
     height: 100px;
 }

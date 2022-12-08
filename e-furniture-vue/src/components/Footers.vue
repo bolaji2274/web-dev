@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="footer-content">
       <div class="container">
         <div class="row">
@@ -91,7 +90,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -108,13 +107,13 @@ export default {};
 .footer-content {
   width: 100%;
   height: 450px;
-  border: 1px solid springgreen;
   background-color: #1e1c1c;
   color: #fff;
 }
 .container {
   max-width: 60%;
   margin: 10% auto;
+  padding: 10% 0 0;
 }
 .logo {
   max-height: 200px;
