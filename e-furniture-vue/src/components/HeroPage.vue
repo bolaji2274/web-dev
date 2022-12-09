@@ -13,28 +13,14 @@
     <div class="card-content">
       <div class="containers">
         <div class="row">
-          <div class="colum-1">
+          <div class="colum-1" v-for="item in items" :key="item" 
+          :style="{ backgroundImage: item.image }"
+          >
             <div class="text">
-              <p>Relax with yourself</p>
-              <h1>Coffe Tables</h1>
-              <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-              <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
-            </div>
-        </div>
-        <div class="colum-2">
-          <div class="text">
-              <p>Unwind with Tea</p>
-              <h1>Side Tables</h1>
-              <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-              <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
-            </div>
-        </div>
-        <div class="colum-3">
-          <div class="text">
-              <p>Poll Side Corner</p>
-              <h1>Dining Tables</h1>
-              <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-               <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
+              <p>{{item.tags}}</p>
+              <h1>{{item.title}}</h1>
+              <p>{{item.desc}}</p>
+              <RouterLink to="/readmore"><button type="submit" class="myBtn">{{item.button}}</button></RouterLink>
             </div>
         </div>
         </div>
@@ -46,6 +32,33 @@
 
 <script>
 export default {
+  data() {
+    return {
+      items: [
+        {
+          image: "url(../../images/img1.webp)",
+          tags: 'Relax with yourself',
+          title: 'Coffe Tables',
+          desc: "Lorem ipsum sit armet, consectur adispscing elit.",
+          button: 'SHOP NOW'
+        },
+        {
+          image: "url(../../images/img2.webp)",
+          tags: 'Unwind with Tea',
+          title: 'Side Tables',
+          desc: "Lorem ipsum sit armet, consectur adispscing elit.",
+          button: 'SHOP NOW'
+        },
+        {
+          image: "url(../../images/img3.webp)",
+          tags: 'Poll Side Corner',
+          title: 'Dining Tables',
+          desc: "Lorem ipsum sit armet, consectur adispscing elit.",
+          button: 'SHOP NOW'
+        }
+      ]
+    }
+  },
 
 }
 </script>
@@ -109,22 +122,10 @@ export default {
 }
 .colum-1{
   flex-basis: 33%;
-  background-image: url('../../images/img1.webp');
   background-size: cover;
   background-position: center;
 }
-.colum-2{
-  flex-basis: 33%;
-  background-image: url('../../images/img2.webp');
-  background-size: cover;
-  background-position: center;
-}
-.colum-3{
-  flex-basis: 33%;
-  background-image: url('../../images/img3.webp');
-  background-size: cover;
-  background-position: center;
-}
+
 .text{
   display: block;
   justify-content: center;
