@@ -105,6 +105,12 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+}
 .product {
   height: 100%;
   width: 100%;
@@ -128,12 +134,13 @@ export default {
   flex-basis: 33% !important;
   border: 2px solid springgreen;
 }
+.text-content{
 
-.pro-list img {
+}
+.text-content img {
   height: 250px;
-  margin-left: 40px;
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
 }
 
 .pro-list h1 {

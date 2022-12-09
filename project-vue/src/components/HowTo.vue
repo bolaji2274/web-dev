@@ -86,15 +86,6 @@ export default {
           url: "#",
         },
       ],
-      // howList2: [
-      //     { image: 'images/sec.PNG', title: 'What is UV-C Light', desc: 'UV-C light is growing in popularity as form of disinfection - but it isn\'t new.', url: '#cont' }
-      // ],
-      // howList3: [
-      //     { image: 'images/third.PNG', title: 'Lesser-Known Uses of UV', desc: 'Safety practices were developed to best \<br\>handle with care.', url: '#' }
-      // ],
-      // howList4: [
-      //     { image: 'images/fourth.jpeg', title: 'UV Light in Healthcare', desc: 'It\'s most common to see UV-C used in \<br\>hospitals as it is steri;izing the air.', url: '#' }
-      // ]
     };
   },
 };
