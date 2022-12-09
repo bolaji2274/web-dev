@@ -50,6 +50,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+
 const questions = ref([
 
   {
@@ -169,6 +170,7 @@ h1 {
   padding: 1rem;
   width: 100%;
   max-width: 640px;
+  border-radius: 0.5rem;
 }
 .quiz-info{
   display: flex;
