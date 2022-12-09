@@ -29,7 +29,8 @@
             </div>
         </div> 
            <div class="read-more">
-            <h2><a href="#">Read More</a></h2>
+            <!-- <h2><a href="#">Read More</a></h2> -->
+            <RouterLink to="/readmore" class="read-more"><h2>Read More</h2></RouterLink>
            </div>
     </div>
     <div class="section-2">
@@ -42,6 +43,7 @@
 </template>
 
 <script>
+import { RouterLink, RouterView } from 'vue-router'
 export default {
 
 }
@@ -128,11 +130,14 @@ export default {
     border-color: #e3e1e0;
     position: relative;
 }
+RouterLink{
+    text-decoration: none;
+}
 .read-more h2{
     text-align: center;
     margin-top: 10px;
 }
-.read-more h2 a{
+.read-more h2{
     color: #6f5948;
 }
 .section-2{
