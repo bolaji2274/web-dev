@@ -42,8 +42,8 @@ export default {
 
 .hero-page {
   color: rgb(49, 50, 155);
-  margin-left: 6%;
-  margin-top: 16%;
+  margin: 16% 4%;
+  border: 2px solid springgreen;
 }
 
 .hero-page h1 {

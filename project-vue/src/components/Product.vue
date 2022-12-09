@@ -1,7 +1,7 @@
 <template>
   <div>
-  <section class="product">
-    <!-- <div class="row">
+    <section class="product">
+      <!-- <div class="row">
             <div class="pro-list" v-for="item in items" :key="item">
                 <img :src="item.image">
                 <h1 v-html="item.title"></h1>
@@ -32,36 +32,35 @@
 
             </div>
         </div> -->
-    <div class="container">
-      <div class="row g-2">
-        <div class="col-md-4" v-for="item in items" :key="item">
-          <img :src="item.image" />
-          <h1 v-html="item.title"></h1>
-          <p v-html="item.desc"></p>
-          <a class="btn2" href="#">{{item.read}}</a>
-        </div>
-
-       <div class="col-md-4"> 
-            <div class="pro-list3">
-   
-                <h1>{{benefit.head1}}</h1>
-                <p>{{benefit.p1}}</p>
-                <a v-html="link"></a> 
-
-                <h1>{{benefit2.head2}}</h1>
-                <p v-html="benefit2.p2"></p>
-                <a v-html="link"></a> 
-
-                <h1>{{benefit3.head3}}</h1>
-                <p v-html="benefit3.p3"></p>
-                <a v-html="link"></a> 
-
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-md-4" v-for="item in items" :key="item">
+            <div class="text-content">
+              <img :src="item.image" />
+              <h1 v-html="item.title"></h1>
+              <p v-html="item.desc"></p>
+              <a class="btn2" href="#">{{ item.read }}</a>
             </div>
-        </div>
+          </div>
 
+          <div class="col-md-4">
+            <div class="pro-list3">
+              <h1>{{ benefit.head1 }}</h1>
+              <p>{{ benefit.p1 }}</p>
+              <a v-html="link"></a>
+
+              <h1>{{ benefit2.head2 }}</h1>
+              <p v-html="benefit2.p2"></p>
+              <a v-html="link"></a>
+
+              <h1>{{ benefit3.head3 }}</h1>
+              <p v-html="benefit3.p3"></p>
+              <a v-html="link"></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </div>
 </template>
 <script>
@@ -78,14 +77,14 @@ export default {
           image: "images/bottle.jpeg",
           title: "Time to Get Your House ",
           desc: " ng elit. Enim dolores tempora quo.",
-          read: 'Read Article'
+          read: "Read Article",
         },
         {
           image: "images/web 3.PNG",
           title: "How VOC Affects Your <br>IndoornAir quality",
           desc: "Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and workspaces.",
-          read: 'Read Article'
-        }
+          read: "Read Article",
+        },
       ],
       benefit: {
         head1: "The Benefit of Using UV-C Light in the Hospitality Industry",
@@ -107,10 +106,6 @@ export default {
 
 <style scoped>
 .product {
-  width: 100%;
-  height: 100%;
-}
-.product {
   height: 100%;
   width: 100%;
   padding-top: 24px;
@@ -118,21 +113,21 @@ export default {
   border: 2px solid springgreen;
 }
 
-.container{
-    padding: 30px 0%;
+.container {
+  /* padding: 30px 4%; */
+  margin: 0px 4%;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   border: 3px solid springgreen;
   width: 100%;
 }
-.col-md-4{
+.col-md-4 {
   flex-basis: 33% !important;
   border: 2px solid springgreen;
 }
-
 
 .pro-list img {
   height: 250px;
