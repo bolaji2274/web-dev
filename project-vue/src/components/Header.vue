@@ -2,7 +2,7 @@
     <section class="nav-links">
         <nav>
             <img class="imgl" src="images/logo.PNG">
-            <div class="nav-links" id="navLinks">
+            <div id="navLinks">
                 <ul>
                     <li v-for="link in links" :key="link"><a :href="link.url">{{link.name}}</a></li>
     
@@ -19,7 +19,7 @@ export default {
             links: [
                 {name:'Home',url:'#'},
                 {name:'Product',url:'#'},
-                {name:'How Its Works',url:'#'},
+                {name:'How its Works',url:'#'},
                 {name:'Blog',url:'#'}
             ]
         }
@@ -43,6 +43,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    border: 2px solid springgreen;
 }
 
 .nav-links ul li {
