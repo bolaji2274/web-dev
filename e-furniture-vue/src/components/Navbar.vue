@@ -2,7 +2,9 @@
 <div class="nav-container">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../../images/logo_1.avif" style="max-width: 205px" alt="Furni"></a>
+                <RouterLink to="/" class="navbar-brand">
+                    <a class="navbar-brand" href="#"><img src="../../images/logo_1.avif" style="max-width: 205px" alt="Furni"></a>
+                </RouterLink>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -16,6 +18,7 @@
                         <form action="">
                             <input type="search" class="search" placeholder="Search">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                           
                         </form>
                     </div>
                 </div>
@@ -32,6 +35,7 @@
 </template>
 
 <script>
+import { RouterLink, RouterView } from 'vue-router'
 export default {
   data() {
         return {

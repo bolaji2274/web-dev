@@ -18,7 +18,7 @@
               <p>Relax with yourself</p>
               <h1>Coffe Tables</h1>
               <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-              <button type="submit" class="myBtn">SHOP NOW</button>
+              <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
             </div>
         </div>
         <div class="colum-2">
@@ -26,7 +26,7 @@
               <p>Unwind with Tea</p>
               <h1>Side Tables</h1>
               <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-              <button type="submit" class="myBtn">SHOP NOW</button>
+              <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
             </div>
         </div>
         <div class="colum-3">
@@ -34,7 +34,7 @@
               <p>Poll Side Corner</p>
               <h1>Dining Tables</h1>
               <p>Lorem ipsum sit armet, consectur adispscing elit.</p>
-              <button type="submit" class="myBtn">SHOP NOW</button>
+               <RouterLink to="/readmore"><button type="submit" class="myBtn">SHOP NOW</button></RouterLink>
             </div>
         </div>
         </div>

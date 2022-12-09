@@ -30,7 +30,7 @@
         </div> 
            <div class="read-more">
             <!-- <h2><a href="#">Read More</a></h2> -->
-            <RouterLink to="/readmore" class="read-more"><h2>Read More</h2></RouterLink>
+            <RouterLink to="/readmore"><h2><a href="#">Read More</a></h2></RouterLink>
            </div>
     </div>
     <div class="section-2">
@@ -66,6 +66,7 @@ export default {
 }
 .container p{
     color: #6f5948;
+    margin-top: 5%;
     font-size: 1.8rem;
     margin-bottom: 25px;
 }
@@ -138,6 +139,9 @@ RouterLink{
     margin-top: 10px;
 }
 .read-more h2{
+    color: #6f5948;
+}
+.read-more h2 a{
     color: #6f5948;
 }
 .section-2{
