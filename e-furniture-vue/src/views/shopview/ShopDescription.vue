@@ -48,7 +48,7 @@
                     <div class="row g-2">
                             <div class="col-6">
                             <div class="p-3 border bg-light">
-                                <img src="../../images/p12_600x.webp" width="100%" height="100%" class="img" alt="">
+                                <img src="../../images/fall-leaves.webp" width="100%" height="100%" class="img" alt="">
                             </div>
                             </div>
                             <div class="col-6">
@@ -138,7 +138,7 @@ export default {};
     height: 350px;
     background-image: url('../../images/p12_600x.webp');
     background-position: center top;
-    background-size: 200px 200px;
+    background-size: 300px 250px;
     background-repeat: no-repeat;
     border: 8px solid #e3e1e0;
     margin-top: 30px;
@@ -147,12 +147,11 @@ export default {};
 .text-content{
     text-align: center;
     position: absolute;
-    left: 30px;
+    left: 80px;
     bottom: -6px;
 }
 .text-content p{
     font-size: 12px;
-    width: 80%;
     font-weight: bold;
     margin-top: 20%;
 }
