@@ -3,7 +3,7 @@
     <div class="container">
       <p>Trendy collection</p>
       <div class="row">
-        <div class="p-3 border bg-light">
+        <div class="bg-light">
           <div class="row g-2">
             <div class="col-3" v-for="shop in shops" :key="shop">
               <div
