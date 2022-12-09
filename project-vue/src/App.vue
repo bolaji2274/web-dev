@@ -1,12 +1,13 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue';
-import HomeView from './views/HomeView.vue'
+import Footers from './components/Footer.vue';
 
 
 export default {
   components: {
-    Header
+    Header,
+    Footers
   }
 }
 
@@ -16,8 +17,11 @@ export default {
   <div>
 
   <Header />
-  <RouterView />
+
 </div>
+  <RouterView />
+<Footers name='company' help='get help' shop='online shop' follow='follow us'/>
+
 </template>
 
 <style>

@@ -34,6 +34,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    border: 4px solid springgreen;
 }
 
 nav img {
@@ -50,7 +51,7 @@ nav img {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-
+    border: 4px solid springgreen;
 }
 
 nav ul li a {

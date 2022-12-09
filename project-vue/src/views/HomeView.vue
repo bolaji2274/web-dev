@@ -3,11 +3,11 @@ import HeroPage from '../components/HeroPage.vue'
 import Product from '../components/Product.vue'
 import HowTo from '../components/HowTo.vue'
 import Blog from '../components/Blog.vue'
-import Footers from '../components/Footer.vue'
+// import Footers from '../components/Footer.vue'
 
 export default {
   components: {
-    HeroPage, Product, HowTo, Blog, Footers
+    HeroPage, Product, HowTo, Blog,
   }
 }
 
@@ -20,7 +20,7 @@ export default {
     <Product  proImage="images/web 3.PNG" proTitle="How VOC Affects Your <br>IndoornAir quality" proDesc="Using UV Light for disinfection is becoming an <br> essential hygiene practice for both home and workspaces." />
     <HowTo />
     <Blog />
-    <Footers name='company' help='get help' shop='online shop' follow='follow us'/>
+    
   </main>
 </template>
 
