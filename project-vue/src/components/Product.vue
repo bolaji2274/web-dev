@@ -1,4 +1,5 @@
 <template>
+  <div>
   <section class="product">
     <!-- <div class="row">
             <div class="pro-list" v-for="item in items" :key="item">
@@ -61,7 +62,7 @@
       </div>
     </div>
   </section>
-  >
+  </div>
 </template>
 <script>
 export default {
@@ -106,12 +107,30 @@ export default {
 
 <style scoped>
 .product {
-  margin-left: 30px;
   width: 100%;
-  margin-top: 40px;
+  height: 100%;
+}
+.product {
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  margin-top: 3%;
+  border: 2px solid springgreen;
+}
+
+.container{
+    padding: 30px 0%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 3px solid springgreen;
+  width: 100%;
 }
 .col-md-4{
-    border: 2px solid springgreen;
+  flex-basis: 33% !important;
+  border: 2px solid springgreen;
 }
 
 
