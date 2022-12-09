@@ -3,9 +3,10 @@
         <div class="container">
             <div class="row">
                 <hr>
-                <div class="col-md-6 first-col">
+                <div class="col-md-6 sm-12 first-col">
                     <div class="texts">
-                        <h1>Hi! I Am <span class="span-text">UI/UX</span> <marquee behavior="alternate" scrollamount="30" direction="right">Bolaji Hammed</marquee> </h1>
+                        <!-- <h1>Hi! I Am <span class="span-text">UI/UX</span> <marquee behavior="alternate" scrollamount="30" direction="right">Bolaji Hammed</marquee> </h1> -->
+                        <h1>Hi! I Am <span class="span-text">UI/UX</span> <br>BOLAJI HAMMED</h1>
                         <p class="text-design">Designing a user interfaces for over <span style="font-weight: bold;">7 years</span> as a product designer</p>
                         <div class="row inner-row">
                             <div class="col">
@@ -30,8 +31,9 @@
                                 </div>
                             </div>  
                          </div>
-                    <div class="footer">
-                                <div class="container bg-black p-footer">
+                    <div class="footer bg-black">
+                                <div class="text2">
+                                    <div class="p-footer">
                                     <div class="row">
                                         <div class="col-md-6 project row-footer">
                                             <h2>Project <br>Statistics 2022</h2>
@@ -44,10 +46,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                 </div>
-                <div class="col-md-6 second-col bg-brown">
-                    <img class="image-page" src="about.jpg"  alt="">
+                <div class="col-md-6 second-col sm-12 bg-brown">
+                    <!-- <img class="image-page" src="about.jpg"  alt=""> -->
                 </div>
             </div>
         </div>
@@ -68,36 +71,50 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 hr{
     margin-bottom: 0px;
+}
+.container{
+    max-width: 100%;
+}
+.row{
+    width: 100%;
 }
 .row .col-md-6 .texts{
     width: 330px;
     margin-top: 10%;
 }
 .second-col{
-    margin-top: 0px !important;
+    margin-top: 4px !important;
+}
+.first-col{
+    padding-left: 0%;
+}
+.texts{
+    padding-left: 5%;
 }
 .texts h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     color: black;
-    line-height: 1.2;
-}
-.first-row{
-    padding-left: 20%;
+    line-height: 1.4;
 }
 .texts h1 span{
     color: #fff;
     background-color: blue;
     border-radius: 30px;
-    margin-left: 15px;
+    margin-left: 15px !important;
+    font-size: 12px;
     vertical-align: bottom;
     font-size: 30px;
-    /* width: 190px; */
-    padding: 10px;
     opacity: 0.7;
+    padding: 5px 20px 0;
 }
+
 .text-design{
     margin-top: 30px;
 }
@@ -125,13 +142,22 @@ hr{
 .text-plus h1{
     font-size: 25px;
 }
+.second-col{
+    background-image: url('../../about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+}
 .image-page{
     object-fit: cover;
-    width: 110%;
+    width: 100%;
     height: 100%;
 }
 .footer{
-    width: 100%;
+    width: 102%;
+}
+.footer .text2{
+    padding-left: 5%;
 }
 .p-footer{
     padding-bottom: 10%;
