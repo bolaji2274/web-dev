@@ -42,12 +42,14 @@
         </div> -->
     <section class="how">
       <div class="container">
-        <div class="row">
+        <div class="row g-2">
           <div class="col-md-3" v-for="list in howList" :key="list">
+            <div class="text-content">
             <img :src="list.image" />
             <h1>{{ list.title }}</h1>
-            <p>{{ list.desc }}</p>
+            <p v-html="list.desc"></p>
             <a :href="list.url" class="bbb">Read in 12 minutes</a>
+            </div>
           </div>
         </div>
       </div>
@@ -92,6 +94,12 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+}
 .how {
   height: 100%;
   width: 100%;
@@ -99,10 +107,9 @@ export default {
   margin-top: 3%;
   border: 2px solid springgreen;
 }
+
 .container {
-  /* padding: 30px 4%; */
   margin: 0px 4%;
-  margin-bottom: 14px;
 }
 .row {
   display: flex;
@@ -114,6 +121,23 @@ export default {
 .col-md-3{
   flex-basis: 24.8% !important;
   border: 2px solid springgreen;
+}
+.col-md-3 img{
+  width: 100%;
+  height: 200px;
+}
+.col-md-3 h1{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(49, 50, 155);
+  margin: 10px 0 12px 0;
+}
+.col-md-3 p{
+  color: rgb(49, 50, 155);
+  margin-bottom: 10px;
+}
+.col-md-3 a{
+  color: rgb(49, 50, 155);
 }
 .btt {
   border: 1px solid rgb(49, 50, 155);

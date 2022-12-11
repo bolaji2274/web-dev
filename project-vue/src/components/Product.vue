@@ -1,37 +1,6 @@
 <template>
   <div>
     <section class="product">
-      <!-- <div class="row">
-            <div class="pro-list" v-for="item in items" :key="item">
-                <img :src="item.image">
-                <h1 v-html="item.title"></h1>
-                <p v-html="item.desc"></p>
-                <a class="btn2" href="#">Read Article</a>
-            </div>
-
-            <div class="pro-list2">
-                <img :src="proImage" alt="pro List 2 image">
-                <h1 v-html="proTitle"></h1>
-                <p v-html="proDesc"></p>
-                <a href="#" class="btn2">Read Article</a>
-            </div>
-
-            <div class="pro-list3">
-               
-                <h1>{{benefit.head1}}</h1>
-                <p>{{benefit.p1}}</p>
-                <a v-html="link"></a> 
-
-                <h1>{{benefit2.head2}}</h1>
-                <p v-html="benefit2.p2"></p>
-                <a v-html="link"></a> 
-
-                <h1>{{benefit3.head3}}</h1>
-                <p v-html="benefit3.p3"></p>
-                <a v-html="link"></a> 
-
-            </div>
-        </div> -->
       <div class="container">
         <div class="row g-2">
           <div class="col-md-4" v-for="item in items" :key="item">
