@@ -83,9 +83,8 @@ export default {
 .product {
   height: 100%;
   width: 100%;
-  padding-top: 24px;
-  margin-top: 3%;
-  border: 2px solid springgreen;
+  padding-top: 15px;
+  margin-top: 2%;
 }
 
 .container {
@@ -95,12 +94,10 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 3px solid springgreen;
   width: 100%;
 }
 .col-md-4 {
   flex-basis: 33% !important;
-  border: 2px solid springgreen;
 }
 
 .text-content img {
@@ -138,6 +135,7 @@ export default {
 
 .pro-list3 {
   width: 350px;
+  padding-left: 3%;
 }
 
 .pro-list3 h1 {

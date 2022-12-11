@@ -43,7 +43,6 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
-    border: 2px solid springgreen;
 }
 
 .nav-links ul li {
