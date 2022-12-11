@@ -49,11 +49,11 @@
               <p>{{ benefit.p1 }}</p>
               <a v-html="link"></a>
 
-              <h1>{{ benefit2.head2 }}</h1>
+              <h1 class="head">{{ benefit2.head2 }}</h1>
               <p v-html="benefit2.p2"></p>
               <a v-html="link"></a>
 
-              <h1>{{ benefit3.head3 }}</h1>
+              <h1 class="head">{{ benefit3.head3 }}</h1>
               <p v-html="benefit3.p3"></p>
               <a v-html="link"></a>
             </div>
@@ -120,7 +120,6 @@ export default {
 }
 
 .container {
-  /* padding: 30px 4%; */
   margin: 0px 4%;
 }
 .row {
@@ -138,11 +137,17 @@ export default {
 
 }
 .text-content img {
-  height: 250px;
+  height: 350px;
   border-radius: 10px;
   width: 100%;
 }
-
+.text-content h1{
+  color: rgb(49, 50, 155);
+  font-weight: bold;
+  font-size: 30px;
+  margin: 18px 0;
+  line-height: 1.2;
+}
 .pro-list h1 {
   margin-left: 40px;
   color: rgb(49, 50, 155);
@@ -188,29 +193,30 @@ export default {
   transition: 1s;
 }
 
-h1 {
-  color: rgb(49, 50, 155);
-}
-
 .btn2:hover {
   background: lightblue;
 }
 
 .pro-list3 {
-  margin-left: 35px;
+  /* margin-left: 35px; */
+  width: 350px;
 }
 
 .pro-list3 h1 {
   color: rgb(49, 50, 155);
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .pro-list3 p {
   color: rgb(49, 50, 155);
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 7px;
   margin-bottom: 20px;
+}
+.pro-list3 .head{
+  margin-top: 10%;
 }
 
 .bbb {
