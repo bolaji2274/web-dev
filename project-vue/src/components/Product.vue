@@ -75,8 +75,8 @@ export default {
       items: [
         {
           image: "images/bottle.jpeg",
-          title: "Time to Get Your House ",
-          desc: " ng elit. Enim dolores tempora quo.",
+          title: "Time to Get Your House Clean and in Order",
+          desc: " Sit ac non gravido lacus. Gravido non est purus scelerisque gravido morbi quam elitng elit.",
           read: "Read Article",
         },
         {
@@ -133,11 +133,9 @@ export default {
   flex-basis: 33% !important;
   border: 2px solid springgreen;
 }
-.text-content{
 
-}
 .text-content img {
-  height: 350px;
+  height: 370px;
   border-radius: 10px;
   width: 100%;
 }
@@ -148,47 +146,19 @@ export default {
   margin: 18px 0;
   line-height: 1.2;
 }
-.pro-list h1 {
-  margin-left: 40px;
+.text-content p {
   color: rgb(49, 50, 155);
-  margin-top: 10px;
-}
-
-.pro-list p {
-  color: rgb(49, 50, 155);
-  font-size: 13px;
-  margin-left: 40px;
+  font-size: 14px;
   margin-top: 7px;
   margin-bottom: 20px;
 }
 
-.pro-list2 img {
-  margin-left: 40px;
-  height: 250px;
-  border-radius: 10px;
-  width: 400px;
-}
-
-.pro-list2 h1 {
-  margin-left: 40px;
-  color: rgb(49, 50, 155);
-  margin-top: 10px;
-}
-
-.pro-list2 p {
-  color: rgb(49, 50, 155);
-  font-size: 13px;
-  margin-top: 7px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-
-.btn2 {
+.text-content a{
   border: 1px solid rgb(49, 50, 155);
   padding: 8px 12px;
   text-decoration: none;
+  color: rgb(49, 50, 155);
   font-size: 13px;
-  margin-left: 40px;
   border-radius: 6px;
   transition: 1s;
 }
@@ -198,7 +168,6 @@ export default {
 }
 
 .pro-list3 {
-  /* margin-left: 35px; */
   width: 350px;
 }
 
@@ -211,7 +180,7 @@ export default {
 
 .pro-list3 p {
   color: rgb(49, 50, 155);
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 7px;
   margin-bottom: 20px;
 }
