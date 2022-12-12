@@ -44,15 +44,23 @@
             </div>
 
             <div class="col-md-9">
-              <div class="p-3 border bg-light">
+              <div class="border">
                     <div class="row g-2">
-                            <div class="col-6">
-                            <div class="p-3 border bg-light">
-                                <img src="../../images/fall-leaves.webp" width="100%" height="100%" class="img" alt="">
+                            <div class="col-6 cl2">
+                            <div class=" border">
+                                <!-- <img src="../../images/fall-leaves.webp" width="100px" height="100vh" class="img" alt="">
+                                <img src="../../images/logo_1.avif">
+                                <h1>Hello Wolrd</h1> -->
                             </div>
                             </div>
                             <div class="col-6">
-                            <div class="p-3 border bg-light">Custom column padding</div>
+                            <div class="border">
+                              <div class="colum2">
+                                <h3>Broomstick chair</h3>
+                                <p> <i class="fa fire"></i> <span> Sold 36 Products in last 12 hours</span></p>
+                                
+                              </div>
+                            </div>
                      </div>
                 </div>
             </div>
@@ -69,7 +77,6 @@ export default {};
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -159,5 +166,16 @@ export default {};
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 50px;
+}
+.cl2{
+  background: url("../../images/p12_600x.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+  border: 4px solid springgreen;
+}
+.colum2{
+  color: #6f5948;
 }
 </style>
