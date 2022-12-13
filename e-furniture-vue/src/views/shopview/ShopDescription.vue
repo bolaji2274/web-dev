@@ -13,7 +13,7 @@
         <div class="container overflow-hidden">
           <div class="row gy-5">
             <div class="col-md-3">
-              <div class="border">
+              <div class="">
                 <div class="colum1">
                   <h5>Category</h5>
                   <hr />
@@ -47,17 +47,17 @@
             </div>
 
             <div class="col-md-9">
-              <div class="border">
+              <div class="">
                 <div class="row g-2">
                   <div class="col-6 cl2">
-                    <div class="border">
+                    <div class="">
                       <!-- <img src="../../images/fall-leaves.webp" width="100px" height="100vh" class="img" alt="">
                                 <img src="../../images/logo_1.avif">
                                 <h1>Hello Wolrd</h1> -->
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="border">
+                    <div class="">
                       <div class="colum2">
                         <h3>Broomstick chair</h3>
                         <p>
@@ -222,6 +222,10 @@ export default {
   height: 530px;
   /* border: 4px solid springgreen; */
 }
+.col-md-9{
+  overflow: scroll;
+  height: 550px;
+}
 .colum2 {
   color: #6f5948;
 }
@@ -304,5 +308,7 @@ export default {
 .tab-content p{
   color: #6f5948;
   font-size: 13px;
+  padding: 20px 5%;
+  border: 1px solid #c5aa93;
 }
 </style>
