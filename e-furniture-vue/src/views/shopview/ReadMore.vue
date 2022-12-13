@@ -5,7 +5,7 @@
       <div class="row">
         <div class="bg-light">
           <div class="row g-2">
-            <div class="col-3" v-for="shop in shops" :key="shop">
+            <div class="col-md-3 col-sm-12" v-for="shop in shops" :key="shop">
               <RouterLink to="/description">
               <div
                 class="p-3 bg-light colum-1"

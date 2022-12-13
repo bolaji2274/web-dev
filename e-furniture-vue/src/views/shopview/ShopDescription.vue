@@ -223,7 +223,7 @@ export default {
   /* border: 4px solid springgreen; */
 }
 .col-md-9{
-  overflow: scroll;
+  overflow: auto;
   height: 550px;
 }
 .colum2 {
