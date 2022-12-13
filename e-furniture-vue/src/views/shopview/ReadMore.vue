@@ -6,6 +6,7 @@
         <div class="bg-light">
           <div class="row g-2">
             <div class="col-3" v-for="shop in shops" :key="shop">
+              <RouterLink to="/description">
               <div
                 class="p-3 bg-light colum-1"
                 :style="{ backgroundImage: shop.image }"
@@ -15,6 +16,8 @@
                   <p class="price">{{ shop.price }}</p>
                 </div>
               </div>
+              </RouterLink>
+
             </div>
           </div>
         </div>

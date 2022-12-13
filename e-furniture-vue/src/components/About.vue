@@ -113,9 +113,7 @@ export default {
 .text-content p.price {
   font-weight: bold;
 }
-RouterLink {
-  text-decoration: none;
-}
+
 .read-more h2 {
   text-align: center;
   margin-top: 10px;
