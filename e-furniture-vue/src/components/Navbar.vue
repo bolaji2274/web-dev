@@ -82,6 +82,7 @@ a img{
 form{
     width: 100%;
     height: 37px;
+    position: relative;
 }
 form input{
     padding: 7px 9px 6px 20px;
@@ -95,6 +96,7 @@ form button{
     border-radius: 0px 20px 20px 0px;
     background-color: #6f5948;
     color: #fff;
+    position: absolute;
     transition: 0.8s;
 }
 .search button:hover{

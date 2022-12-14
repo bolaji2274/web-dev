@@ -131,6 +131,9 @@ export default {
   background-size: cover;
   background-position: center;
 }
+.colum-1:hover{
+  border: 4px solid springgreen;
+}
 
 .text {
   display: block;
