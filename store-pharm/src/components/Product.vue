@@ -60,7 +60,7 @@
                            <input type="button" value="Purchase" class="form-btn">
                         </form>
                      </div> -->
-                     <div class="content2 border">
+                     <div class="content2">
                         <div class="page-content">
                           <ul class="list-item">
                             <li v-for="shop,id in shops" :key="id">
@@ -86,7 +86,7 @@
                                   <tbody>
                                     <tr>
                                       <td class="text-right">Sub-Total</td>
-                                      <td class="text-right" v-once>$ {{total}}</td>
+                                      <td class="text-right">$ {{total}}</td>
                                     </tr>
                                     <tr>
                                       <td class="text-right">
