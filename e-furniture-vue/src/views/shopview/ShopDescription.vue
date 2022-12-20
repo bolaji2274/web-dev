@@ -77,30 +77,37 @@
                           <p>
                             Quantity:
                             <span class="quantity">
-                              <button @click="counter--">-</button>
-                             <input v-model="counter">
-                              <button @click="counter++">+</button>
+                              <button @click="decrease">-</button>
+                              <input min="1" :value="counter" />
+                              <button @click="increase">+</button>
                             </span>
                           </p>
 
                           <button class="btn1">Add to Cart</button>
                           <button class="btn1">Add to wishlist</button>
                         </div>
-
-                        
                       </div>
                     </div>
                   </div>
 
                   <div class="information">
                     <div class="btn-information">
-                      <button class="tablinks product">Product Information</button>
+                      <button class="tablinks product">
+                        Product Information
+                      </button>
                       <button class="tablinks">Additional Information</button>
                       <button class="tablinks">Reviews</button>
                     </div>
                     <div class="tab-content">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui official.
                       </p>
                     </div>
                   </div>
@@ -118,8 +125,16 @@
 export default {
   data() {
     return {
-      counter: 1
-    }
+      counter: 1,
+    };
+  },
+  methods: {
+    increase() {
+      return this.counter >= 15 ? alert("Maximum order is 15") : this.counter++;
+    },
+    decrease() {
+      return this.counter <= 1 ? (this.counter = 1) : this.counter--;
+    },
   },
 };
 </script>
@@ -222,7 +237,7 @@ export default {
   height: 530px;
   /* border: 4px solid springgreen; */
 }
-.col-md-9{
+.col-md-9 {
   overflow: auto;
   height: 550px;
 }
@@ -257,19 +272,19 @@ export default {
   color: #519271;
   font-size: 13px;
 }
-.quantity{
+.quantity {
   width: 90px;
 }
-.quantity input{
-  width: 30px;
+.quantity input {
+  width: 20px;
   text-align: center;
   padding: 4px;
 }
-.quantity button{
+.quantity button {
   padding: 4px;
   width: 30px;
 }
-.btn1{
+.btn1 {
   margin: 0px 15px 15px 0px;
   padding: 14px 15px 12px;
   color: #fff;
@@ -278,19 +293,19 @@ export default {
   border: none;
   font-size: 13px;
 }
-.btn1:hover{
+.btn1:hover {
   background-color: #ceb19b;
 }
-.information{
+.information {
   width: 100%;
 }
-.btn-information{
+.btn-information {
   display: flex;
   justify-content: space-between;
   width: 450px;
   font-size: 13px;
 }
-.tablinks{
+.tablinks {
   padding: 15px 20px;
   color: #fff;
   background-color: #6f5948;
@@ -299,13 +314,13 @@ export default {
   font-size: 13px;
   transition: 0.5s;
 }
-.tablinks:hover{
+.tablinks:hover {
   background-color: #ceb19b;
 }
-.product{
+.product {
   background-color: #ceb19b;
 }
-.tab-content p{
+.tab-content p {
   color: #6f5948;
   font-size: 13px;
   padding: 20px 5%;
