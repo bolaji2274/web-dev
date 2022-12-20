@@ -9,7 +9,7 @@ import MyStore from '../components/MyStore.vue';
   <main>
     <Heropage />
     <Product/>
-    <MyStore/>
+    <!-- <MyStore/> -->
     <!-- <Footers/> -->
   </main>
 </template>

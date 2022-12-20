@@ -142,8 +142,8 @@ export default {
     },
     decrease(id) {
         this.shops[id].counter <= 0 ? (this.shops[id].counter = 0) : this.shops[id].counter--;
-        this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
-        this.shops[id].PriceTotal -= this.shops[id].totals;
+        // this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
+        // this.shops[id].PriceTotal -= this.shops[id].totals;
         // this.total -= this.shops[id].PriceTotal;
         // this.total -= this.shops[id].price;
         this.check(id)
@@ -154,7 +154,7 @@ export default {
         this.display = true;
         this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
         this.shops[id].PriceTotal += this.shops[id].totals;
-        // this.total = this.shops[id].PriceTotal;
+        this.total = this.shops[id].PriceTotal;
         // this.total = this.checkTotal(id);
       }else {
         this.shops[id].display = false;
