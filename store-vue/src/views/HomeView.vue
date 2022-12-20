@@ -1,19 +1,18 @@
 <script>
-
-import HelloWorld from '../components/HelloWorld.vue';
+import HelloWorld from "../components/HelloWorld.vue";
+import User from "../components/User.vue";
 
 export default {
   components: {
-
-    HelloWorld
-
-  }
-}
+    HelloWorld,
+    User
+  },
+};
 </script>
 
 <template>
   <main>
-
-    <HelloWorld/>
+    <!-- <HelloWorld /> -->
+    <User/>
   </main>
 </template>

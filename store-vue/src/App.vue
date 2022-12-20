@@ -3,7 +3,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 
-
 export default{
   component: {
 
@@ -12,9 +11,8 @@ export default{
 
 </script>
 <template>
-  <header>
- 
-  </header>
+  <main>
+  </main>
 
 
   <RouterView />
