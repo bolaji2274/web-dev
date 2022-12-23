@@ -131,7 +131,6 @@ export default {
         { img: "image/prilose.jpeg", name: "Prillose Pill", price: 16 , counter: 0, display: false , totals: 0, PriceTotal: 0},
         { img: "image/rayAid.jpeg", name: "Rite", price: 19, counter: 0, display: false , totals: 0, PriceTotal: 0},
         { img: "image/sinaspril.jpeg", name: "Pertfic Pill", price: 24, counter: 0, display: false, totals: 0 , PriceTotal: 0},
-        // { img: "image/tidinDrug.jpeg", name: "Tedins Drug", price: "$ 30" }
       ],
     }
   },
@@ -170,8 +169,7 @@ export default {
     },
     check(id){
       if (this.shops[id].counter === 0){
-        this.shops[id].display = false;
-      }
+        this.shops[id].display = false;      }
     },
     remove(id){
       this.shops[id].counter = 0;
@@ -298,6 +296,7 @@ tr td button{
   margin-right: 0;
 }
 tr td a img{
+  margin-top: 4%;
   width: 50px;
   height: 55px;
 }
