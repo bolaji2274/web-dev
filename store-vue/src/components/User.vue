@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+    <UserDetail/>
   </div>
 </template>
 
