@@ -1,18 +1,23 @@
 <script>
-import HelloWorld from "../components/HelloWorld.vue";
-import User from "../components/User.vue";
+import Home from '../components/Compo/Home.vue';
 
 export default {
   components: {
-    HelloWorld,
-    User
+    Home
   },
 };
 </script>
 
 <template>
   <main>
-    <!-- <HelloWorld /> -->
-    <User/>
+    <Home>
+      <h2>The Qoute</h2>
+      <p>A wonderful Qoute</p>
+    </Home>
   </main>
 </template>
+<style scoped>
+h2{
+  color: red;
+}
+</style>
