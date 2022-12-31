@@ -1,10 +1,10 @@
 <script setup>
-import Status from '../components/Status.vue';
+// import Status from '../components/Status.vue';
 </script>
 
 <template>
   <main>
 
-    <Status/>
+    <!-- <Status/> -->
   </main>
 </template>
