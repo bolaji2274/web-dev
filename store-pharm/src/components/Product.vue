@@ -23,7 +23,7 @@
                               >Qty</label
                             >
                             <button class="minus" @click="decrease(id)">-</button>
-                            <input type="number detail" v-model="shop.counter" disabled/>
+                            <input type="number detail" v-model.number="shop.counter" disabled/>
                             <button class="plus" @click="increase(id)">+</button>
                             <button
                               type="button"
@@ -50,7 +50,7 @@
                                   <tr>
                                         <td class="text-center"><a href="#"><img :src="shop.img" alt=""></a></td>
                                         <td class="text-left">{{shop.name}}</td>
-                                        <td class="text-right">x{{shop.counter}}</td>
+                                        <td class="text-right" v-once>x{{shop.counter}}</td>
                                         <td class="text-right">${{shop.price * shop.counter}}</td>
                                         <td class="text-center">
                                           <button type="button" class="btn btn-danger btn-xs" @click="remove(id)">
@@ -118,35 +118,20 @@ export default {
   methods: {
     increase(id) {
         this.shops[id].counter >= 15 ? alert("Maximum order is 15") : this.shops[id].counter++;
-        // this.total += this.shops[id].price;
     },
     decrease(id) {
         this.shops[id].counter <= 0 ? (this.shops[id].counter = 0) : this.shops[id].counter--;
-        // this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
-        // this.shops[id].PriceTotal -= this.shops[id].totals;
-        // this.total -= this.shops[id].PriceTotal;
-        // this.total -= this.shops[id].price;
         this.check(id)
     },
     addToCart(id){
       if (this.shops[id].counter !== 0){
         this.shops[id].display = true;
-        this.display = true;
-        this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
-        this.shops[id].PriceTotal += this.shops[id].totals;
-        this.total = this.shops[id].PriceTotal;
-        // this.total = this.checkTotal(id);
       }else {
         this.shops[id].display = false;
-        this.display = true;
       }
     },
     checkTotal(id){
-      let total = 0;
-      this.shops[id].totals = this.shops[id].counter * this.shops[id].price;
-      this.shops[id].PriceTotal += this.shops[id].totals;
-      total = this.shops[id].PriceTotal;
-      return total
+       return this.total + this.shops[id].counter * this.shops[id].price;
     },
     check(id){
       if (this.shops[id].counter === 0){
