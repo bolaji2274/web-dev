@@ -5,7 +5,7 @@
             <h2>Goute Generator</h2>
         </div>  
         <div class="loading"  v-if="loading">
-            <p>loading ........</p>
+            <p>{{loader()}} loading .....</p>
         </div>
         <div class="main-content" v-if="!loading"> 
             <div class="text-area">
@@ -32,11 +32,20 @@ export default{
             qoute: {
         content: '',
         anime: '',
-        character: ''
+        character: '',
+        load: 'Loading '
         }
     }
     },
     methods: {
+        loader(){
+            setInterval(() => {
+                this.load += '.';
+                if (this.load === 'Loading ....'){
+                    this.load = 'Loading '
+                }
+            }, 300);
+        },
         async newQoute() {
             // let random = Math.floor(Math.random() * qotes.length);
             const data = await fetch('https://animechan.vercel.app/api/random').then(res => res.json());
