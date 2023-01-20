@@ -73,9 +73,10 @@ export default{
     },
         created() {
         this.newQoute();
-        this.readOut("Hi, Welcome To Qoute generator API service, You are welcome to be here . Thanks.");
-
     },
+    mounted(){
+        this.readOut("Hi, Welcome To Qoute generator API service, You are welcome to be here . Thanks.");
+    }
 }
 </script>
 
