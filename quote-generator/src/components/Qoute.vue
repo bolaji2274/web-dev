@@ -91,7 +91,6 @@ export default{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('post-three.jpg') no-repeat center center/ cover;
     height: 100vh;
 }
 .container{
@@ -122,7 +121,7 @@ export default{
     line-height: 1.5;
 }
 .main-content .person{
-    font-sise: 1.6rem;
+    font-size: 1.6rem;
     color: red;
     text-transform: uppercase;
     margin-top: 20px;
