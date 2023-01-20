@@ -1,11 +1,11 @@
 <template>
      <div class="container">
         <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-5">
+        <div class="col-md-6">
              <div class="word">
                 <p id="heart">&hearts;</p>
                 <p class="speed">speed up communications</p>
-                <h1>Hi I'm Bolaji Hammed</h1>
+                <h1>Hi I'm Folorunsho Muhammad Alli</h1>
                 <p class="studio">AU Studio is the place for everything related
                     a project, to-do-list or communication
                 </p>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-7 sec-collum">
+        <div class="col-md-6 sec-collum">
         <div class="image-content">
             <p class="user">&#128269; User Research</p>
             <div class="great">
@@ -69,7 +69,7 @@ export default {
 } */
 div.word{
     margin-top: 15%;
-    max-width: 90%;
+    max-width: 100%;
     margin: 20% auto;
     /* margin-left: 50px; */
 }
@@ -86,7 +86,7 @@ p#heart{
     opacity: 0.6;
 }
 .word h1{
-    width: 300px;
+    width: 500px;
     font-weight: bold;
 }
 .word p.studio{
@@ -95,11 +95,11 @@ p#heart{
     margin-top: 40px;
 }
 div.sec-collum{
-    background: url('about.jpg');
+    background: url('alli.jpg');
     background-position: center;
     background-size: cover;
-    height: 450px;
-    width: 100%;
+    height: 700px;
+    /* width: 100%; */
     border-radius: 20px;
 }
 .image-content{
@@ -166,7 +166,7 @@ button.btn{
 }
 .icons-tag{
     color: red;
-    margin-top: 30%;
+    margin-top: 10%;
     word-spacing: 100px;
     max-width: 200px;
     width: 150px;
