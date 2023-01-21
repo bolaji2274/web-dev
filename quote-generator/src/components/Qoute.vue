@@ -2,7 +2,7 @@
     <div class="body">
     <div class="container" v-on:mousemove="onStart">
         <div class="header">
-            <h2>Goute Generator</h2>
+            <h2>HB Qoute Generator</h2>
         </div>  
         <div class="loading"  v-if="loading">
             <p>{{loader()}} loading .....</p>
