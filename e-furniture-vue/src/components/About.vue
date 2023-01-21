@@ -37,22 +37,22 @@ export default {
     return {
       shops: [
         {
-          image: "url(/src/assets/images/p1_600x.webp)",
+          image: "url(./src/assets/images/p1_600x.webp)",
           desc: "Alex Study Chair",
           price: "$ 208.00",
         },
         {
-          image: "url(/src/assets/images/p8_600x.webp)",
+          image: "url(./src/assets/images/p8_600x.webp)",
           desc: "Brommstick chair",
           price: "$ 178.00",
         },
         {
-          image: "url(/src/assets/images/p10_600x.webp)",
+          image: "url(./src/assets/images/p10_600x.webp)",
           desc: "Amet Kairfort",
           price: "$ 756.00",
         },
         {
-          image: "url(/src/assets/images/p13_600x.webp)",
+          image: "url(./src/assets/images/p13_600x.webp)",
           desc: "Fuastick chair",
           price: "$ 178.00",
         },

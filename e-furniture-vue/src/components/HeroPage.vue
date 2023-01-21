@@ -43,21 +43,21 @@ export default {
     return {
       items: [
         {
-          image: "url(/src/assets/images/img1.webp)",
+          image: "url(./src/assets/images/img1.webp)",
           tags: "Relax with yourself",
           title: "Coffe Tables",
           desc: "Lorem ipsum sit armet, consectur adispscing elit.",
           button: "SHOP NOW",
         },
         {
-          image: "url(/src/assets/images/img2.webp)",
+          image: "url(./src/assets/images/img2.webp)",
           tags: "Unwind with Tea",
           title: "Side Tables",
           desc: "Lorem ipsum sit armet, consectur adispscing elit.",
           button: "SHOP NOW",
         },
         {
-          image: "url(/src/assets/images/img3.webp)",
+          image: "url(./src/assets/images/img3.webp)",
           tags: "Poll Side Corner",
           title: "Dining Tables",
           desc: "Lorem ipsum sit armet, consectur adispscing elit.",
