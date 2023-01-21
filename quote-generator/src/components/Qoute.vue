@@ -55,11 +55,11 @@ export default{
                 anime: data.anime,
                 character: data.character
         }
-        this.readOut(`${this.qoute.character} said 
-			setTimeOut( () => {
-				${this.qoute.content}
-				}, 3000)`
-		    )
+        this.readOut(`${this.qoute.character} said `);
+	setTimeOut( () => {
+			this.readOut(`${this.qoute.content}`);
+			}, 3000)
+
         this.loading = false;        
     },
        
