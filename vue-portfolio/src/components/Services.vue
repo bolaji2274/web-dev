@@ -23,9 +23,9 @@ export default {
     data() {
         return {
             services: [
-                {image: 'program.png', name: 'JavaScript Developer', desc: 'We are expert in developer a responsive and animation website', link: 'Youtube'},
-                {image: 'software.png', name: 'Full-Stack Developer', desc: 'Full-Stack developer both Front-End And Back-End', link: 'GitHub'},
-                {image: 'program.png', name: 'Python Developer', desc: 'Python crash Developer , Dev-ops and PHP', link: 'Instagram'}
+                {image: '/src/assets/image/bolaji.png', name: 'JavaScript Developer', desc: 'We are expert in developer a responsive and animation website', link: 'Youtube'},
+                {image: '/src/assets/image/bolaji.jpg', name: 'Full-Stack Developer', desc: 'Full-Stack developer both Front-End And Back-End', link: 'GitHub'},
+                {image: '/src/assets/image/my-hb.png', name: 'Python Developer', desc: 'Python crash Developer , Dev-ops and PHP', link: 'Instagram'}
             ]
         }
     },

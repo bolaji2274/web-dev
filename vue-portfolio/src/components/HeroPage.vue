@@ -5,7 +5,7 @@
              <div class="word">
                 <p id="heart">&hearts;</p>
                 <p class="speed">speed up communications</p>
-                <h1>Hi I'm Folorunsho Muhammad Alli</h1>
+                <h1>Hi I'm Bolaji Hammed</h1>
                 <p class="studio">AU Studio is the place for everything related
                     a project, to-do-list or communication
                 </p>
@@ -95,7 +95,7 @@ p#heart{
     margin-top: 40px;
 }
 div.sec-collum{
-    background: url('alli.jpg');
+    background: url('my.jpg');
     background-position: center;
     background-size: cover;
     height: 700px;
