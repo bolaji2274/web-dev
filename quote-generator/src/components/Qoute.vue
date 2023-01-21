@@ -56,7 +56,7 @@ export default{
                 character: data.character
         }
         this.readOut(`${this.qoute.character} said `);
-	setTimeOut( () => {
+	setTimeout(() => {
 			this.readOut(`${this.qoute.content}`);
 			}, 3000)
 
