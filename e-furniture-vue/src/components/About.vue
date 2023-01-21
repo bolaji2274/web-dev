@@ -4,7 +4,7 @@
       <p>Trendy Collections</p>
       <div class="row">
         <div
-          class="col-md-3 colum-1"
+          class="col-md-3 col-sm-12 colum-1"
           v-for="shop in shops"
           :key="shop"
           :style="{ backgroundImage: shop.image }"
@@ -24,8 +24,8 @@
     </div>
     <div class="section-2">
       <div class="row row2">
-        <div class="col-md-6 detail-1"></div>
-        <div class="col-md-6 detail-2"></div>
+        <div class="col-md-6 col-sm-12 detail-1"></div>
+        <div class="col-md-6 col-sm-12 detail-2"></div>
       </div>
     </div>
   </div>

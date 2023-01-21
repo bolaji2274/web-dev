@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12">
             <div class="content">
               <h2>Footer menu</h2>
               <ul>
@@ -34,7 +34,7 @@
             </div>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12">
             <div class="content">
               <h2>Who We Are</h2>
               <ul>
@@ -47,7 +47,7 @@
             </div>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12">
             <div class="content">
               <h2>Information</h2>
               <ul>
@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-12">
             <div class="content">
               <h2>Contact us</h2>
               <ul>
@@ -106,7 +106,6 @@ export default {};
 }
 .footer-content {
   width: 100%;
-  height: 450px;
   background-color: #1e1c1c;
   color: #fff;
 }
