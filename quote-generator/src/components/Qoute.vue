@@ -48,8 +48,9 @@ export default{
         },
         async newQoute() {
             // let random = Math.floor(Math.random() * qotes.length);
-            const data = await fetch('https://animechan.vercel.app/api/random').then(res => res.json());
-            
+            //const data = await fetch('https://animechan.vercel.app/api/random').then(res => res.json());
+		const data = await fetch('https://free-quotes-api.herokuapp.com').then(res => res.json());
+            //https://free-quotes-api.herokuapp.com/
             this.qoute = {
                 content: data.quote,
                 anime: data.anime,
